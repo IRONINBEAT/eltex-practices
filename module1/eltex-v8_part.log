@@ -1,0 +1,62 @@
+Script started on 2026-07-06 13:09:09+07:00 [TERM="screen.xterm-256color" TTY="/dev/pts/118" COLUMNS="95" LINES="14"]
+[?2004h[01;32meltex-v8@eltex-2026-summer[00m:[01;34m~[00m$ sdsd[K[K[K[Kasdasdasd[K[K[K[K[K[K[K[K[Kasdasa[K[K[K[K[K[Kls
+ls           lsb_release  lsinitramfs  lslocks      lsmod        lspci        
+lsattr       lscpu        lsipc        lslogins     lsns         lsusb        
+lsblk        lsfd         lsirq        lsmem        lsof         
+[01;32meltex-v8@eltex-2026-summer[00m:[01;34m~[00m$ ls[K[K[7mecho $HIST[27mecho $HIST
+$HISTCMD       $HISTCONTROL   $HISTFILE      $HISTFILESIZE  $HISTSIZE      
+[01;32meltex-v8@eltex-2026-summer[00m:[01;34m~[00m$ echo $HIST[K[K[K[K[K[K[K[K[K[K[7mecho $HISTFILESIZE[27mecho $HISTFILESIZE
+[?2004l2000
+[?2004h[01;32meltex-v8@eltex-2026-summer[00m:[01;34m~[00m$ asasas[K[K[K[K[K[K[7mls -d ~/.*[27mls -d ~/.*
+[?2004l/home/eltex-v8/.bash_history  /home/eltex-v8/.bashrc  /home/eltex-v8/.profile
+/home/eltex-v8/.bash_logout   [0m[01;34m/home/eltex-v8/.config[0m  /home/eltex-v8/.viminfo
+[?2004h[01;32meltex-v8@eltex-2026-summer[00m:[01;34m~[00m$ [7mls -a ~ | grep '^\.'[27mls -a ~ | grep '^\.'
+[?2004l.
+..
+.bash_history
+.bash_logout
+.bashrc
+.config
+.profile
+.viminfo
+[?2004h[01;32meltex-v8@eltex-2026-summer[00m:[01;34m~[00m$ ls -a ~ | grep '^\.'[10Pd ~/.*echo $HISTFILESIZE[8Pscreen -lsecho $HISTFILESIZE[8Pls -d ~/.*a ~ | grep '^\.'[K[7mexport HISTTIMEFORMAT="%F %T "[27mexport HISTTIMEFORMAT="%F %T "
+[?2004l[?2004h[01;32meltex-v8@eltex-2026-summer[00m:[01;34m~[00m$ [7mhistory[27mhistory
+[?2004l    1  2026-07-06 13:09:09 pwd
+    2  2026-07-06 13:09:09 ls -a
+    3  2026-07-06 13:09:09 cd /
+    4  2026-07-06 13:09:09 ls
+    5  2026-07-06 13:09:09 cd home
+    6  2026-07-06 13:09:09 ls
+    7  2026-07-06 13:09:09 cd eltex v8
+    8  2026-07-06 13:09:09 cd eltex-v8
+    9  2026-07-06 13:09:09 w
+   10  2026-07-06 13:09:09 D
+   11  2026-07-06 13:09:09 screen -dmS top top
+   12  2026-07-06 13:09:09 screen -ls
+   13  2026-07-06 13:09:09 screen -r top
+   14  2026-07-06 13:09:09 watch /usr/bin/vmstat
+   15  2026-07-06 13:09:09 "
+   16  2026-07-06 13:09:09 echo $STY
+   17  2026-07-06 13:09:09 screen -r
+   18  2026-07-06 13:09:09 screen -ls
+   19  2026-07-06 13:09:09 screen -dmS top top
+   20  2026-07-06 13:09:09 screen -ls
+   21  2026-07-06 13:09:09 screen -r top
+   22  2026-07-06 13:09:09 screen -ls
+   23  2026-07-06 13:09:09 logout
+   24  2026-07-06 13:09:09 exit
+   25  2026-07-06 13:09:09 screen -S report vi report_part1.txt
+   26  2026-07-06 13:09:09 screen -l
+   27  2026-07-06 13:09:09 exit
+   28  2026-07-06 13:09:09 watch /usr/bin/vmstat
+   29  2026-07-06 13:09:09 screen -ls
+   30  2026-07-06 13:09:09 screen -r report
+   31  2026-07-06 13:09:09 screen -ls
+   32  2026-07-06 13:09:09 screen -X -S top quit
+   33  2026-07-06 13:09:09 screen -ls
+   34  2026-07-06 13:10:55 echo $HISTFILESIZE
+   35  2026-07-06 13:11:37 ls -d ~/.*
+   36  2026-07-06 13:12:06 ls -a ~ | grep '^\.'
+   37  2026-07-06 13:12:29 export HISTTIMEFORMAT="%F %T "
+   38  2026-07-06 13:12:35 history
+[?2004h[01;32meltex-v8@eltex-2026-summer[00m:[01;34m~[00m$ historyexport HISTTIMEFORMAT="%F %T "[10Pls -a ~ | grep '^\.'[10Pd ~/.*echo $HISTFILESIZE[8Pscreen -lsX -S top quitls[Kr reportls[Kwatch /usr/bin/vmstatexit[Kscreen -lS report vi report_part1.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Klogoutscreen -lsr top[3PlsdmS top topls[K[1Precho $STY"[Kwatch /usr/bin/vmstat[8Pscreen -r top[3PlsdmS top topD[Kwcd eltex-v8 v8ls[Kcd homels[Kcd eltex v8-v8w[KDscreen -dmS top topls[Kr topwatch /usr/bin/vmstat"[Kecho $STYscreen -rlsdmS top topls[Kr top[3Pls[4Plogout[2Pexitscreen -S report vi report_part1.txtl[K[5Pexitwatch /usr/bin/vmstat[11Pscreen -lsr reportls[KX -S top quitls[Kecho $HISTFILESIZE[8Pls -d ~/.*a ~ | grep '^\.'export HISTTIMEFORMAT="%F %T "history[K[K[K[01;32meltex-v8@eltex-2026-summer[00m:[01;34m~[00m$ historyexport HISTTIMEFORMAT="%F %T "[10Pls -a ~ | grep '^\.'[10Pd ~/.*echo $HISTFILESIZE[8Pscreen -lsX -S top quitls[Kr reportls[Kwatch /usr/bin/vmstatexit[Kscreen -lS report vi report_part1.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Klogoutscreen -lsr top[3PlsdmS top topls[KdmS top topls[Kr top[3Pls[4Plogout[2Pexitscreen -S report vi report_part1.txtl[K[5Pexitwatch /usr/bin/vmstat[11Pscreen -lsr reportls[KX -S top quitls[Kecho $HISTFILESIZE[8Pls -d ~/.*a ~ | grep '^\.'export HISTTIMEFORMAT="%F %T "history[K[Khistoryexport HISTTIMEFORMAT="%F %T "[10Pls -a ~ | grep '^\.'[10Pd ~/.*echo $HISTFILESIZE[8Pscreen -lsX -S top quitls[Kr reportls[Kwatch /usr/bin/vmstatexit[Kscreen -lS report vi report_part1.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Klogoutscreen -ls[4Plogout[2Pexitscreen -S report vi report_part1.txtl[K[5Pexitwatch /usr/bin/vmstat[11Pscreen -lsr reportls[KX -S top quitls[Kecho $HISTFILESIZE[8Pls -d ~/.*a ~ | grep '^\.'export HISTTIMEFORMAT="%F %T "history[K[Khistoryexport HISTTIMEFORMAT="%F %T "[10Pls -a ~ | grep '^\.'[10Pd ~/.*echo $HISTFILESIZE[8Pscreen -lsX -S top quitls[Kr reportls[Kwatch /usr/bin/vmstatexit[Kscreen -lS report vi report_part1.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Klogoutscreen -lsr top[3PlsdmS top topls[K[1Precho $STY"[Kwatch /usr/bin/vmstat[8Pscreen -r top[3PlsdmS top topD[Kscreen -dmS top topls[Kr topwatch /usr/bin/vmstat"[Kecho $STYscreen -rlsdmS top topls[Kr top[3Pls[4Plogout[2Pexitscreen -S report vi report_part1.txtl[K[5Pexitwatch /usr/bin/vmstat[11Pscreen -lsr reportls[KX -S top

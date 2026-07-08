@@ -1,0 +1,10 @@
+mkdir -p D1/D2/D3
+mkdir -p D1/D2/D3
+touch D1/D2/file.txt
+echo "Хочу работать в Eltex!" >> D1/D2/file.txt
+ln -s ../file.txt D1/D2/D3/symlink_file.txt
+ln D1/D2/file.txt D1/D2/D3/hardlink_file.txt
+mv D1/D2/file.txt D1/file.txt
+rm -rf D1/D2
+find / -type f -size +20M 2>/dev/null > "${USER}_part3_gt20M.log"
+find ~ -type f -mtime -1
