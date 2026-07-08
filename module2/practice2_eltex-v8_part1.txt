@@ -1,0 +1,304 @@
+eltex-v8@eltex-2026-summer:~$ ssh root@172.16.9.182
+Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.8.0-55-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Jul  8 10:50:59 AM UTC 2026
+
+  System load:  0.06               Processes:              116
+  Usage of /:   44.9% of 14.66GB   Users logged in:        0
+  Memory usage: 8%                 IPv4 address for ens18: 172.16.9.182
+  Swap usage:   0%
+
+Expanded Security Maintenance for Applications is not enabled.
+
+259 updates can be applied immediately.
+196 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+2 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+Воронин Илья
+Wed Jul  8 05:14:50 AM UTC 2026
+Last login: Wed Jul  8 10:13:28 2026 from 172.16.8.4
+root@eltex-practice2-v8:~# useradd -m -s /bin/bash user1
+root@eltex-practice2-v8:~# passwd user1
+New password:
+Retype new password:
+passwd: password updated successfully
+root@eltex-practice2-v8:~# adduser user2
+info: Adding user `user2' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `user2' (1002) ...
+info: Adding new user `user2' (1002) with group `user2 (1002)' ...
+info: Creating home directory `/home/user2' ...
+info: Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for user2
+Enter the new value, or press ENTER for the default
+        Full Name []: User2
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+info: Adding new user `user2' to supplemental / extra groups `users' ...
+info: Adding user `user2' to group `users' ...
+root@eltex-practice2-v8:~# adduser user3
+info: Adding user `user3' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `user3' (1003) ...
+info: Adding new user `user3' (1003) with group `user3 (1003)' ...
+info: Creating home directory `/home/user3' ...
+info: Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for user3
+Enter the new value, or press ENTER for the default
+        Full Name []: User2
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+info: Adding new user `user3' to supplemental / extra groups `users' ...
+info: Adding user `user3' to group `users' ...
+root@eltex-practice2-v8:~# usermod -s /usr/sbin/nologin user3
+root@eltex-practice2-v8:~# su user3
+This account is currently not available.
+root@eltex-practice2-v8:~# su -s /bin/bash user3
+user3@eltex-practice2-v8:/root$ exit
+exit
+root@eltex-practice2-v8:~# groupadd shareusers
+root@eltex-practice2-v8:~# usermod -aG shareusers user1
+root@eltex-practice2-v8:~# usermod -aG shareusers user2
+root@eltex-practice2-v8:~# usermod -aG shareusers user3
+root@eltex-practice2-v8:~# groups user1 user2 user3
+user1 : user1 shareusers
+user2 : user2 users shareusers
+user3 : user3 users shareusers
+root@eltex-practice2-v8:~# mkdir /opt/share
+root@eltex-practice2-v8:~# chgrp shareusers /opt/share
+root@eltex-practice2-v8:~# chmod g+s /opt/share
+root@eltex-practice2-v8:~# chmod g+rwx /opt/share
+root@eltex-practice2-v8:~# ls -ld /opt/share
+drwxrwsr-x 2 root shareusers 4096 Jul  8 10:54 /opt/share
+root@eltex-practice2-v8:~# echo 'umask 027' >> /home/user1/.bashrc
+root@eltex-practice2-v8:~# su - user1
+user1@eltex-practice2-v8:~$ umask
+0027
+user1@eltex-practice2-v8:~$ touch testfile
+user1@eltex-practice2-v8:~$ ls -l testfile
+-rw-r----- 1 user1 user1 0 Jul  8 10:54 testfile
+user1@eltex-practice2-v8:~$ exit
+logout
+root@eltex-practice2-v8:~# su - user1
+user1@eltex-practice2-v8:~$ touch /opt/share/file_user1.txt
+user1@eltex-practice2-v8:~$ exit
+logout
+root@eltex-practice2-v8:~# su - user2
+user2@eltex-practice2-v8:~$ touch /opt/share/file_user2.txt
+user2@eltex-practice2-v8:~$ rm /opt/share/file_user1.txt
+rm: remove write-protected regular empty file '/opt/share/file_user1.txt'? y
+user2@eltex-practice2-v8:~$ ls -l /opt/share
+total 0
+-rw-rw-r-- 1 user2 shareusers 0 Jul  8 10:56 file_user2.txt
+user2@eltex-practice2-v8:~$ exit
+logout
+root@eltex-practice2-v8:~# chmod +t /opt/share
+root@eltex-practice2-v8:~# ls -ld /opt/share
+drwxrwsr-t 2 root shareusers 4096 Jul  8 10:56 /opt/share
+root@eltex-practice2-v8:~# su - user1
+user1@eltex-practice2-v8:~$ touch /opt/share/file_user1_v2.txt
+user1@eltex-practice2-v8:~$ exit
+logout
+root@eltex-practice2-v8:~# su - user2
+user2@eltex-practice2-v8:~$ rm /opt/share/file_user1_v2.txt
+rm: remove write-protected regular empty file '/opt/share/file_user1_v2.txt'? y
+rm: cannot remove '/opt/share/file_user1_v2.txt': Operation not permitted
+user2@eltex-practice2-v8:~$ exit
+logout
+root@eltex-practice2-v8:~# visudo -f /etc/sudoers.d/user1_dmesg
+
+                                                                                                                                  [ Reading... ][ Read 0 lines ]  GNU nano 7.2                     /etc/
+visudo: /etc/sudoers.d/user1_dmesg.tmp unchanged
+root@eltex-practice2-v8:~# visudo -f /etc/sudoers.d/user1_dmesg
+
+                                                                                                                                  [ Reading... ][ Read 0 lines ]  GNU nano 7.2                     /etc/
+
+                                                                                                                          GNU nano 7.2                     /etc/sudoers.d/user1_dmesg.tmp
+
+                                                                                                                GNU nano 7.2                     /etc/sudoers.d/user1_dmesg.tmp
+
+                                                                                                                                                                                                     GNU
+
+                                                                                                                                                                                           GNU nano 7.2
+
+                                                                                                                                                                                           GNU nano 7.2
+
+                                                                                                                                                                                                     GNU
+
+                                                                                                                          GNU nano 7.2                     /etc/sudoers.d/user1_dmesg.tmp
+
+                                                                                                                                    GNU nano 7.2                     /etc/sudoers.d/user1_dmesg.tmp
+
+                                                                                                                                              GNU nano 7.2                     /etc/sudoers.d/user1_dmes
+
+                                                                                                                                                        GNU nano 7.2                     /etc/sudoers.d/
+
+                                                                                                                                              GNU nano 7.2                     /etc/sudoers.d/user1_dmes
+
+                                                                                                                                    GNU nano 7.2                     /etc/sudoers.d/user1_dmesg.tmp
+visudo: /etc/sudoers.d/user1_dmesg.tmp unchanged
+root@eltex-practice2-v8:~# sudo nano /etc/sudoers.d/user_dmesg
+
+                                                                                                                                  [ New File ]  GNU nano 7.2                       /etc/sudoers.d/user_d
+root@eltex-practice2-v8:~# nano newfile
+
+                                                                                                                                  [ New File ]  GNU nano 7.2                                newfile
+root@eltex-practice2-v8:~# visudo -f /etc/sudoers.d/user1_dmesg
+
+                                                                                                                                  [ Reading... ][ Read 0 lines ]  GNU nano 7.2                     /etc/
+root@eltex-practice2-v8:~# su - user1                                                   *
+user1@eltex-practice2-v8:~$ sudo dmesg | head
+[    0.000000] Linux version 6.8.0-55-generic (buildd@lcy02-amd64-095) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #57-Ubuntu SMP PREEMPT_DYN
+AMIC Wed Feb 12 23:42:21 UTC 2025 (Ubuntu 6.8.0-55.57-generic 6.8.12)
+[    0.000000] Command line: BOOT_IMAGE=/vmlinuz-6.8.0-55-generic root=/dev/mapper/ubuntu--vg-ubuntu--lv ro
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Hygon HygonGenuine
+[    0.000000]   Centaur CentaurHauls
+[    0.000000]   zhaoxin   Shanghai
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+user1@eltex-practice2-v8:~$ exit
+logout
+root@eltex-practice2-v8:~# cat << 'EOF' > /usr/local/bin/dmesg_user2.sh
+> #!/bin/bash
+> /usr/bin/dmesg
+> EOF
+root@eltex-practice2-v8:~# chmod +x /usr/local/bin/dmesg_user2.sh
+root@eltex-practice2-v8:~# chmod u+s /usr/local/bin/dmesg_user2.sh
+root@eltex-practice2-v8:~# chown root:root /usr/local/bin/dmesg_user2.sh
+root@eltex-practice2-v8:~# su - user2
+user2@eltex-practice2-v8:~$ /usr/local/bin/dmesg_user2.sh | head
+dmesg: read kernel buffer failed: Operation not permitted
+user2@eltex-practice2-v8:~$ exit
+logout
+root@eltex-practice2-v8:~# chage -M 10 user1
+root@eltex-practice2-v8:~# chage -M 10 user2
+root@eltex-practice2-v8:~# chage -M 10 user3
+root@eltex-practice2-v8:~# chage -l user1
+Last password change                                    : Jul 08, 2026
+Password expires                                        : Jul 18, 2026
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 10
+Number of days of warning before password expires       : 7
+root@eltex-practice2-v8:~# echo 'Воронин Илья' >> /etc/motd
+root@eltex-practice2-v8:~# rsync -a /etc/ /root/etc_backup/
+root@eltex-practice2-v8:~# tar -czf /root/etc_backup.tar.gz -C /root etc_backup
+root@eltex-practice2-v8:~# tar -cjf /root/etc_backup.tar.bz2 -C /root etc_backup
+root@eltex-practice2-v8:~# 7z a /root/etc_backup.7z /root/etc_backup
+
+7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20
+ 64-bit locale=en_US.UTF-8 Threads:2 OPEN_MAX:1024
+
+Scanning the drive:
+
+WARNING: errno=2 : No such file or directory
+/root/etc_backup/os-release
+
+WARNING: errno=2 : No such file or directory
+/root/etc_backup/resolv.conf
+
+WARNING: errno=2 : No such file or directory
+/root/etc_backup/mtab
+
+244 folders, 1507 files, 38698169 bytes (37 MiB)
+
+Creating archive: /root/etc_backup.7z
+
+Add new data to archive: 244 folders, 1507 files, 38698169 bytes (37 MiB)
+
+Files read from disk: 1494
+Archive size: 4676596 bytes (4567 KiB)
+
+Scan WARNINGS for files and folders:
+
+/root/etc_backup/os-release : errno=2 : No such file or directory
+/root/etc_backup/resolv.conf : errno=2 : No such file or directory
+/root/etc_backup/mtab : errno=2 : No such file or directory
+----------------
+Scan WARNINGS: 3
+<tc_backup.tar.gz /root/etc_backup.tar.bz2 /root/etc_backup.7z
+-rw-r--r-- 1 root root 4.5M Jul  8 11:04 /root/etc_backup.7z
+-rw-r--r-- 1 root root 547K Jul  8 11:04 /root/etc_backup.tar.bz2
+-rw-r--r-- 1 root root 581K Jul  8 11:04 /root/etc_backup.tar.gz
+root@eltex-practice2-v8:~# echo "$(date)" >> /etc/motd
+root@eltex-practice2-v8:~# rsync -a --delete /etc/ /root/etc_backup/
+root@eltex-practice2-v8:~# gunzip /root/etc_backup.tar.gz
+root@eltex-practice2-v8:~# tar -rf /root/etc_backup.tar /etc/motd
+tar: Removing leading `/' from member names
+tar: Removing leading `/' from hard link targets
+root@eltex-practice2-v8:~# gzip /root/etc_backup.tar
+root@eltex-practice2-v8:~# mkdir /root/etc_backup_check
+root@eltex-practice2-v8:~# tar -xjf /root/etc_backup.tar.bz2 -C /root/etc_backup_check
+<ereference /root/etc_backup_check/etc_backup /root/etc_backup
+diff -r --no-dereference /root/etc_backup_check/etc_backup/motd /root/etc_backup/motd
+3a4
+> Wed Jul  8 11:04:54 AM UTC 2026
+root@eltex-practice2-v8:~# mkdir /root/etc_backup_gzip /root/etc_backup_7zip
+root@eltex-practice2-v8:~# tar -xzf /root/etc_backup.tar.gz -C /root/etc_backup_gzip
+root@eltex-practice2-v8:~# 7z x /root/etc_backup.7z -o/root/etc_backup_7zip
+
+7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20
+ 64-bit locale=en_US.UTF-8 Threads:2 OPEN_MAX:1024
+
+Scanning the drive for archives:
+1 file, 4676596 bytes (4567 KiB)
+
+Extracting archive: /root/etc_backup.7z
+--
+Path = /root/etc_backup.7z
+Type = 7z
+Physical Size = 4676596
+Headers Size = 20714
+Method = LZMA2:24 BCJ
+Solid = +
+Blocks = 2
+
+Everything is Ok
+
+Folders: 244
+Files: 1507
+Size:       38698169
+Compressed: 4676596
+root@eltex-practice2-v8:~# find /root/etc_backup_gzip -name motd
+/root/etc_backup_gzip/etc/motd
+/root/etc_backup_gzip/etc_backup/motd
+root@eltex-practice2-v8:~# find /root/etc_backup_7zip -name motd
+/root/etc_backup_7zip/etc_backup/motd
+<tc_backup_gzip/etc/motd /root/etc_backup_7zip/etc_backup/motd
+4d3
+< Wed Jul  8 11:04:54 AM UTC 2026
+root@eltex-practice2-v8:~# exit
+logout
+Connection to 172.16.9.182 closed.
+eltex-v8@eltex-2026-summer:~$ ls
+2026-01  2026-04  2026-07  2026-10  D1                        eltex-v8_part.log
+2026-02  2026-05  2026-08  2026-11  eltex-v8_part3_gt20M.log  practice2_eltex-v8_part1.log
+2026-03  2026-06  2026-09  2026-12  eltex-v8_part3.log        report_part1.txt
+eltex-v8@eltex-2026-summer:~$ nano practice2_eltex-v8_part1.log
+
+                                                                                                                                  [ Reading... ][ Read 231 lines ]  GNU nano 7.2                      pr
+eltex-v8@eltex-2026-summer:~$ exit                                                      Script
+exit

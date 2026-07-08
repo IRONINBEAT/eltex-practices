@@ -1,535 +1,0 @@
-Script started on 2026-07-08 11:43:49+07:00 [TERM="screen.xterm-256color" TTY="/dev/pts/116" COLUMNS="95" LINES="14"]
-[?2004h[01;32meltex-v8@eltex-2026-summer[00m:[01;34m~[00m$ screen -r practice2_part1 ls[KS practice2_part1ls[Km[C[C[C[Csh root@172.16.9.182[2P8[5P172.16.9.8-p 22 172.16.9.8creen -r eltex-v8_part2 ls[Kcat "${USER}_part3.log"[13Pscreen -lsr eltex-v8_part2 [5Psh -p 22 172.16.9.8[6P172.16.9.8root@172.16.9.8182[11Pcreem -lsn[C[C[C[CS practice2_part1ls[Kr practice2_part1 [K[7mcat "practice2_${MYUSER}_part1.log" | sed 's/\x1b\[[0-9;]*m//g' >[27m[7m [27m[7m"practice2_${MYUSER}_part1_clean.log"[27m[Acat "practice2_${MYUSER}_part1.log" | sed 's/\x1b\[[0-9;]*m//g' > [1P"practice2_${MYUSER}_part1_clean.log[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mcat -v "practice2_${MYUSER}_part1.log" | head -50[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat -v "practice2_${MYUSER}_part1.log" | head -50
-[?2004l[?2004h[01;32meltex-v8@eltex-2026-summer[00m:[01;34m~[00m$ ssh [K[K[K[Kcat -v "practice2_${MYUSER}_part1.log" | head -50[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23Pscreen -r practice2_part1 ls[KS practice2_part1ls[Km[C[C[C[Csh root@172.16.9.182[2P8[5P172.16.9.8root@172.16.9.8182
-[?2004lWelcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-55-generic x86_64)
-
- * Documentation:  https://help.ubuntu.com
- * Management:     https://landscape.canonical.com
- * Support:        https://ubuntu.com/pro
-
- System information as of Wed Jul  8 04:45:09 AM UTC 2026
-
-  System load:  0.02               Processes:              109
-  Usage of /:   37.8% of 14.66GB   Users logged in:        0
-  Memory usage: 5%                 IPv4 address for ens18: 172.16.9.182
-  Swap usage:   0%
-
-
-Expanded Security Maintenance for Applications is not enabled.
-
-0 updates can be applied immediately.
-
-Enable ESM Apps to receive additional future security updates.
-See https://ubuntu.com/esm or run: sudo pro status
-
-
-The list of available updates is more than a week old.
-To check for new updates run: sudo apt update
-
-Last login: Wed Jul  8 04:38:13 2026 from 172.16.8.4
-[?2004hroot@eltex-practice2-v8:~# [7madduser user2[27madduser user2
-[?2004linfo: Adding user `user2' ...
-info: Selecting UID/GID from range 1000 to 59999 ...
-info: Adding new group `user2' (1002) ...
-info: Adding new user `user2' (1002) with group `user2 (1002)' ...
-info: Creating home directory `/home/user2' ...
-info: Copying files from `/etc/skel' ...
-New password: 
-Retype new password: 
-passwd: password updated successfully
-Changing the user information for user2
-Enter the new value, or press ENTER for the default
-	Full Name []: User2
-	Room Number []: 451
-	Work Phone []: 8-999-999-99-99
-	Home Phone []: 
-	Other []: 
-Is the information correct? [Y/n] y
-info: Adding new user `user2' to supplemental / extra groups `users' ...
-info: Adding user `user2' to group `users' ...
-[?2004hroot@eltex-practice2-v8:~# [7madduser user3[27madduser user3
-[?2004linfo: Adding user `user3' ...
-info: Selecting UID/GID from range 1000 to 59999 ...
-info: Adding new group `user3' (1003) ...
-info: Adding new user `user3' (1003) with group `user3 (1003)' ...
-info: Creating home directory `/home/user3' ...
-info: Copying files from `/etc/skel' ...
-New password: 
-Retype new password: 
-passwd: password updated successfully
-Changing the user information for user3
-Enter the new value, or press ENTER for the default
-	Full Name []: User3
-	Room Number []: 
-	Work Phone []: 
-	Home Phone []: 
-	Other []: 
-Is the information correct? [Y/n] y
-info: Adding new user `user3' to supplemental / extra groups `users' ...
-info: Adding user `user3' to group `users' ...
-[?2004hroot@eltex-practice2-v8:~# [7musermod -s /usr/sbin/nologin user3[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cusermod -s /usr/sbin/nologin user3
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7msu user3[27msu user3
-[?2004lThis account is currently not available.
-[?2004hroot@eltex-practice2-v8:~# [7msu -s /bin/bash user3[27msu -s /bin/bash user3
-[?2004l[?2004h[01;32muser3@eltex-practice2-v8[00m:[01;34m/root[00m$ дщп[K[K[Klogi[Kout 
-[?2004lbash: logout: not login shell: use `exit'
-[?2004h[01;32muser3@eltex-practice2-v8[00m:[01;34m/root[00m$ exit 
-[?2004lexit
-[?2004hroot@eltex-practice2-v8:~# [7mgroupadd shareusers[27mgroupadd shareusers
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7musermod -aG shareusers user1[27musermod -aG shareusers user1
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7musermod -aG shareusers user1[27m[1Pusermod -aG shareusers user2
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7musermod -aG shareusers user1[27m[1Pusermod -aG shareusers user3
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mgroups user1 user2 user3[27mgroups user1 user2 user3
-[?2004luser1 : user1 shareusers
-user2 : user2 users shareusers
-user3 : user3 users shareusers
-[?2004hroot@eltex-practice2-v8:~# [7mmkdir /opt/share[27mmkdir /opt/share
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mchgrp shareusers /opt/share[27mchgrp shareusers /opt/share
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mchmod g+s /opt/share[27mchmod g+s /opt/share
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mchmod g+rwx /opt/share[27mchmod g+rwx /opt/share
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mls -ld /opt/share[27mls -ld /opt/share
-[?2004ldrwxrwsr-x 2 root shareusers 4096 Jul  8 04:52 [0m[01;34m/opt/share[0m
-[?2004hroot@eltex-practice2-v8:~# [7mecho 'umask 027' >> /home/user1/.bashrc[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho 'umask 027' >> /home/user1/.bashrc
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7msu - user1[27msu - user1
-[?2004l[?2004h[01;32muser1@eltex-practice2-v8[00m:[01;34m~[00m$ [7mumask[27mumask
-[?2004l0027
-[?2004h[01;32muser1@eltex-practice2-v8[00m:[01;34m~[00m$ [7mtouch testfile[27mtouch testfile
-[?2004l[?2004h[01;32muser1@eltex-practice2-v8[00m:[01;34m~[00m$ [7mls -l testfile[27mls -l testfile
-[?2004l-rw-r----- 1 user1 user1 0 Jul  8 04:54 testfile
-[?2004h[01;32muser1@eltex-practice2-v8[00m:[01;34m~[00m$ [7mtouch /opt/share/file_user1.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctouch /opt/share/file_user1.txt
-[?2004l[?2004h[01;32muser1@eltex-practice2-v8[00m:[01;34m~[00m$ [7mexit[27mexit
-[?2004llogout
-[?2004hroot@eltex-practice2-v8:~# [7msu - user2[27msu - user2
-[?2004l[?2004h[01;32muser2@eltex-practice2-v8[00m:[01;34m~[00m$ [7mtouch /opt/share/file_user2.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctouch /opt/share/file_user2.txt
-[?2004l[?2004h[01;32muser2@eltex-practice2-v8[00m:[01;34m~[00m$ [7mrm /opt/share/file_user1.txt[27mrm /opt/share/file_user1.txt
-[?2004lrm: remove write-protected regular empty file '/opt/share/file_user1.txt'? y ^[  ^C
-[?2004h[01;32muser2@eltex-practice2-v8[00m:[01;34m~[00m$ ls /opt/share/
-[?2004lfile_user1.txt  file_user2.txt
-[?2004h[01;32muser2@eltex-practice2-v8[00m:[01;34m~[00m$ ls /opt/share/rm /opt/share/file_user1.txt
-[?2004lrm: remove write-protected regular empty file '/opt/share/file_user1.txt'? y
-[?2004h[01;32muser2@eltex-practice2-v8[00m:[01;34m~[00m$ rm /opt/share/file_user1.txt[14Pls /opt/share/
-[?2004lfile_user2.txt
-[?2004h[01;32muser2@eltex-practice2-v8[00m:[01;34m~[00m$ ls /opt/share/rm /opt/share/file_user1.txt[14Pls /opt/share/rm /opt/share/file_user1.txttouch /opt/share/file_user2.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Prm /opt/share/file_user1.txt[14Pls /opt/share/rm /opt/share/file_user1.txt[14Pls /opt/share/[Kexit
-[?2004llogout
-[?2004hroot@eltex-practice2-v8:~# eeeeeeexxxуучуexexexex[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mchmod +t /opt/share[27mchmod +t /opt/share
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mls -ld /opt/share[27mls -ld /opt/share
-[?2004ldrwxrwsr-t 2 root shareusers 4096 Jul  8 04:56 [0m[37;44m/opt/share[0m
-[?2004hroot@eltex-practice2-v8:~# [7msu - user1[27msu - user1
-[?2004l[?2004h[01;32muser1@eltex-practice2-v8[00m:[01;34m~[00m$ [7mtouch /opt/share/file_user1_v2.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctouch /opt/share/file_user1_v2.txt
-[?2004l[?2004h[01;32muser1@eltex-practice2-v8[00m:[01;34m~[00m$ exit
-[?2004llogout
-[?2004hroot@eltex-practice2-v8:~# ls /opt/share
-[?2004lfile_user1_v2.txt  file_user2.txt
-[?2004hroot@eltex-practice2-v8:~# su - user2
-[?2004l[?2004h[01;32muser2@eltex-practice2-v8[00m:[01;34m~[00m$ [7mrm /opt/share/file_user1_v2.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crm /opt/share/file_user1_v2.txt
-[?2004lrm: remove write-protected regular empty file '/opt/share/file_user1_v2.txt'? y
-rm: cannot remove '/opt/share/file_user1_v2.txt': Operation not permitted
-[?2004h[01;32muser2@eltex-practice2-v8[00m:[01;34m~[00m$ exit 
-[?2004llogout
-[?2004hroot@eltex-practice2-v8:~# [7mvisudo -f /etc/sudoers.d/user1_dmesg[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvisudo -f /etc/sudoers.d/user1_dmesg
-[?2004l[?2004h[?1049h[22;0;0t[1;14r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[12;41H(B[0;7m[ Reading... ](B[m[12;40H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 7.2                     /etc/sudoers.d/user1_dmesg.tmp                              [1;94H(B[m[13d(B[0;7m^G(B[m Help[13;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[13;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[14d(B[0;7m^X(B[m Exit[14;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line[2d[?12l[?25h[?25l[1;67H(B[0;7m*[12d(B[m[K[1;94H[2duser1 ALL=(ALL) NOPASSWD: /usr/bin/dmesg[?12l[?25h[?25l[13;16H        (B[0;7mM-D(B[m DOS Format         (B[0;7mM-A(B[m Append             (B[0;7mM-B(B[m Backup File  [14;2H(B[0;7mC(B[m Cancel[16G        (B[0;7mM-M(B[m Mac Format         (B[0;7mM-P(B[m Prepend            (B[0;7m^T(B[m Browse[K[12d(B[0;7mFile Name to Write: /etc/sudoers.d/user1_dmesg.tmp                                             [12;51H(B[m[?12l[?25h[?25l[12;40H[1K (B[0;7m[ Writing... ](B[m[K[1;67H(B[0;7m [94G(B[m[12;40H(B[0;7m[ Wrote 1 line ](B[m[13;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut         (B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[14;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line[?12l[?25h[2;41H[?25l[13;16H        (B[0;7mM-D(B[m DOS Format         (B[0;7mM-A(B[m Append             (B[0;7mM-B(B[m Backup File  [14;2H(B[0;7mC(B[m Cancel[16G        (B[0;7mM-M(B[m Mac Format         (B[0;7mM-P(B[m Prepend            (B[0;7m^T(B[m Browse[K[12d(B[0;7mFile Name to Write: /etc/sudoers.d/user1_dmesg.tmp                                             [12;51H(B[m[?12l[?25h[?25l[12;40H[1K (B[0;7m[ Writing... ](B[m[K[1;94H[12;40H(B[0;7m[ Wrote 1 line ](B[m[13;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut         (B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[14;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line[?12l[?25h[2;41H[?25l[12d[J[14d[?12l[?25h[14;1H[?1049l[23;0;0t[?1l>[?2004l[?2004hroot@eltex-practice2-v8:~# [7msu - user1[27msu - user1
-[?2004l[?2004h[01;32muser1@eltex-practice2-v8[00m:[01;34m~[00m$ [7msudo dmesg | head[27msudo dmesg | head
-[?2004l[    0.000000] Linux version 6.8.0-55-generic (buildd@lcy02-amd64-095) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #57-Ubuntu SMP PREEMPT_DYNAMIC Wed Feb 12 23:42:21 UTC 2025 (Ubuntu 6.8.0-55.57-generic 6.8.12)
-[    0.000000] Command line: BOOT_IMAGE=/vmlinuz-6.8.0-55-generic root=/dev/mapper/ubuntu--vg-ubuntu--lv ro
-[    0.000000] KERNEL supported cpus:
-[    0.000000]   Intel GenuineIntel
-[    0.000000]   AMD AuthenticAMD
-[    0.000000]   Hygon HygonGenuine
-[    0.000000]   Centaur CentaurHauls
-[    0.000000]   zhaoxin   Shanghai  
-[    0.000000] BIOS-provided physical RAM map:
-[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
-[?2004h[01;32muser1@eltex-practice2-v8[00m:[01;34m~[00m$ exit 
-[?2004llogout
-[?2004hroot@eltex-practice2-v8:~# [7mcat << 'EOF' > /usr/local/bin/dmesg_user2.sh[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat << 'EOF' > /usr/local/bin/dmesg_user2.sh
-[?2004l[?2004h> [7m#!/bin/bash[27m[C[C#!/bin/bash
-[?2004l[?2004h> [7m/usr/bin/dmesg[27m[C[C/usr/bin/dmesg
-[?2004l[?2004h> [7mEOF[27mEOF
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mchmod +x /usr/local/bin/dmesg_user2.sh[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cchmod +x /usr/local/bin/dmesg_user2.sh
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mchmod u+s /usr/local/bin/dmesg_user2.sh[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cchmod u+s /usr/local/bin/dmesg_user2.sh
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mchown root:root /usr/local/bin/dmesg_user2.sh[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cchown root:root /usr/local/bin/dmesg_user2.sh
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7msu - user2[27msu - user2
-[?2004l[?2004h[01;32muser2@eltex-practice2-v8[00m:[01;34m~[00m$ [7m/usr/local/bin/dmesg_user2.sh | head[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/usr/local/bin/dmesg_user2.sh | head
-[?2004ldmesg: read kernel buffer failed: Operation not permitted
-[?2004h[01;32muser2@eltex-practice2-v8[00m:[01;34m~[00m$ exit
-[?2004llogout
-[?2004hroot@eltex-practice2-v8:~# [7mchage -M 10 user1[27mchage -M 10 user1
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mchage -M 10 user1[27m[1Pchage -M 10 user2
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mchage -M 10 user1[27m[1Pchage -M 10 user3
-[?2004l[?2004hroot@eltex-practice2-v8:~# v[K[7mchage -l user1[27mchage -l user1
-[?2004lLast password change					: Jul 08, 2026
-Password expires					: Jul 18, 2026
-Password inactive					: never
-Account expires						: never
-Minimum number of days between password change		: 0
-Maximum number of days between password change		: 10
-Number of days of warning before password expires	: 7
-[?2004hroot@eltex-practice2-v8:~# [7mecho 'Иван Иванов' >> /etc/motd[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho 'Иван Иванов' >> /etc/motd[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@В[1@о[1@р[1@о[1@н[1@и[1@н[1@ [1@И[1@л[1@ь[1@я[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mrsync -a /etc/ /root/etc_backup/[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crsync -a /etc/ /root/etc_backup/
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mtar -czf /root/etc_backup.tar.gz -C /root etc_backup[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctar -czf /root/etc_backup.tar.gz -C /root etc_backup
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mtar -cjf /root/etc_backup.tar.bz2 -C /root etc_backup[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctar -cjf /root/etc_backup.tar.bz2 -C /root etc_backup
-[?2004l/bin/sh: 1: bzip2: not found
-tar: /root/etc_backup.tar.bz2: Cannot write: Broken pipe
-tar: Child returned status 127
-tar: Error is not recoverable: exiting now
-[?2004hroot@eltex-practice2-v8:~# tar -cjf /root/etc_backup.tar.bz2 -C /root etc_backup
-[?2004l/bin/sh: 1: bzip2: not found
-tar: /root/etc_backup.tar.bz2: Cannot write: Broken pipe
-tar: Child returned status 127
-tar: Error is not recoverable: exiting now
-[?2004hroot@eltex-practice2-v8:~# [7mapt install bzip2 -y[27mapt install bzip2 -y
-[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
-Reading state information... 0% Reading state information... 0%Reading state information... Done
-Suggested packages:
-  bzip2-doc
-The following NEW packages will be installed:
-  bzip2
-0 upgraded, 1 newly installed, 0 to remove and 5 not upgraded.
-Need to get 34.5 kB of archives.
-After this operation, 112 kB of additional disk space will be used.
-[33m0% [Working][0m            Get:1 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 bzip2 amd64 1.0.8-5.1build0.1 [34.5 kB]
-[33m10% [1 bzip2 4,506 B/34.5 kB 13%][0m[33m                                 100% [Working][0m              Fetched 34.5 kB in 0s (149 kB/s)
-
-7[0;13r8[1ASelecting previously unselected package bzip2.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 86670 files and directories currently installed.)
-Preparing to unpack .../bzip2_1.0.8-5.1build0.1_amd64.deb ...
-7[14;0f[42m[30mProgress: [  0%][49m[39m [.........................................................................] 87[14;0f[42m[30mProgress: [ 20%][49m[39m [##############...........................................................] 8Unpacking bzip2 (1.0.8-5.1build0.1) ...
-7[14;0f[42m[30mProgress: [ 40%][49m[39m [#############################............................................] 8Setting up bzip2 (1.0.8-5.1build0.1) ...
-7[14;0f[42m[30mProgress: [ 60%][49m[39m [###########################################..............................] 87[14;0f[42m[30mProgress: [ 80%][49m[39m [##########################################################...............] 8Processing triggers for man-db (2.12.0-4build2) ...
-�^X
-7[0;14r8[1A[JScanning processes... [                                                                       ]Scanning processes... [                                                                       ]Scanning processes... [=                                                                      ]Scanning processes... [=                                                                      ]Scanning processes... [==                                                                     ]Scanning processes... [===                                                                    ]Scanning processes... [===                                                                    ]Scanning processes... [====                                                                   ]Scanning processes... [=====                                                                  ]Scanning processes... [=====                                                                  ]Scanning processes... [======                                                                 ]Scanning processes... [=======                                                                ]Scanning processes... [=======                                                                ]Scanning processes... [========                                                               ]Scanning processes... [=========                                                              ]Scanning processes... [=========                                                              ]Scanning processes... [==========                                                             ]Scanning processes... [==========                                                             ]Scanning processes... [===========                                                            ]Scanning processes... [============                                                           ]Scanning processes... [============                                                           ]Scanning processes... [=============                                                          ]Scanning processes... [==============                                                         ]Scanning processes... [==============                                                         ]Scanning processes... [===============                                                        ]Scanning processes... [================                                                       ]Scanning processes... [================                                                       ]Scanning processes... [=================                                                      ]Scanning processes... [==================                                                     ]Scanning processes... [==================                                                     ]Scanning processes... [===================                                                    ]Scanning processes... [====================                                                   ]Scanning processes... [====================                                                   ]Scanning processes... [=====================                                                  ]Scanning processes... [=====================                                                  ]Scanning processes... [======================                                                 ]Scanning processes... [=======================                                                ]Scanning processes... [=======================                                                ]Scanning processes... [========================                                               ]Scanning processes... [=========================                                              ]Scanning processes... [=========================                                              ]Scanning processes... [==========================                                             ]Scanning processes... [===========================                                            ]Scanning processes... [===========================                                            ]Scanning processes... [============================                                           ]Scanning processes... [=============================                                          ]Scanning processes... [=============================                                          ]Scanning processes... [==============================                                         ]Scanning processes... [==============================                                         ]Scanning processes... [===============================                                        ]Scanning processes... [================================                                       ]Scanning processes... [================================                                       ]Scanning processes... [=================================                                      ]Scanning processes... [==================================                                     ]Scanning processes... [==================================                                     ]Scanning processes... [===================================                                    ]Scanning processes... [====================================                                   ]Scanning processes... [====================================                                   ]Scanning processes... [=====================================                                  ]Scanning processes... [======================================                                 ]Scanning processes... [======================================                                 ]Scanning processes... [=======================================                                ]Scanning processes... [========================================                               ]Scanning processes... [========================================                               ]Scanning processes... [=========================================                              ]Scanning processes... [=========================================                              ]Scanning processes... [==========================================                             ]Scanning processes... [===========================================                            ]Scanning processes... [===========================================                            ]Scanning processes... [============================================                           ]Scanning processes... [=============================================                          ]Scanning processes... [=============================================                          ]Scanning processes... [==============================================                         ]Scanning processes... [===============================================                        ]Scanning processes... [===============================================                        ]Scanning processes... [================================================                       ]Scanning processes... [=================================================                      ]Scanning processes... [=================================================                      ]Scanning processes... [==================================================                     ]Scanning processes... [==================================================                     ]Scanning processes... [===================================================                    ]Scanning processes... [====================================================                   ]Scanning processes... [====================================================                   ]Scanning processes... [=====================================================                  ]Scanning processes... [======================================================                 ]Scanning processes... [======================================================                 ]Scanning processes... [=======================================================                ]Scanning processes... [========================================================               ]Scanning processes... [========================================================               ]Scanning processes... [=========================================================              ]Scanning processes... [==========================================================             ]Scanning processes... [==========================================================             ]Scanning processes... [===========================================================            ]Scanning processes... [============================================================           ]Scanning processes... [============================================================           ]Scanning processes... [=============================================================          ]Scanning processes... [=============================================================          ]Scanning processes... [==============================================================         ]Scanning processes... [===============================================================        ]Scanning processes... [===============================================================        ]Scanning processes... [================================================================       ]Scanning processes... [=================================================================      ]Scanning processes... [=================================================================      ]Scanning processes... [==================================================================     ]Scanning processes... [===================================================================    ]Scanning processes... [===================================================================    ]Scanning processes... [====================================================================   ]Scanning processes... [=====================================================================  ]Scanning processes... [=====================================================================  ]Scanning processes... [====================================================================== ]Scanning processes... [=======================================================================]Scanning processes...                                                                          
-Scanning linux images... [                                                                    ]Scanning linux images... [======================                                              ]Scanning linux images... [=============================================                       ]Scanning linux images... [====================================================================]Scanning linux images...                                                                       
-
-Running kernel seems to be up-to-date.
-
-No services need to be restarted.
-
-No containers need to be restarted.
-
-No user sessions are running outdated binaries.
-
-No VM guests are running outdated hypervisor (qemu) binaries on this host.
-[1;33mW: [0mOperation was interrupted before it could finish[0m
-[?2004hroot@eltex-practice2-v8:~# apt install bzip2 -y
-[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
-Reading state information... 0% Reading state information... 0%Reading state information... Done
-bzip2 is already the newest version (1.0.8-5.1build0.1).
-0 upgraded, 0 newly installed, 0 to remove and 5 not upgraded.
-[?2004hroot@eltex-practice2-v8:~# [7mapt install p7zip-full -y[27mapt install p7zip-full -y
-[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
-Reading state information... 0% Reading state information... 0%Reading state information... Done
-The following additional packages will be installed:
-  7zip
-Suggested packages:
-  7zip-standalone 7zip-rar
-The following NEW packages will be installed:
-  7zip p7zip-full
-0 upgraded, 2 newly installed, 0 to remove and 5 not upgraded.
-Need to get 1,849 kB of archives.
-After this operation, 6,318 kB of additional disk space will be used.
-[33m0% [Working][0m            Get:1 http://ru.archive.ubuntu.com/ubuntu noble/universe amd64 7zip amd64 23.01+dfsg-11 [1,846 kB]
-[33m1% [1 7zip 11.8 kB/1,846 kB 1%][0m[33m                               90% [Working][0m             Get:2 http://ru.archive.ubuntu.com/ubuntu noble/universe amd64 p7zip-full all 16.02+transitional.1 [2,500 B]
-[33m90% [2 p7zip-full 2,500 B/2,500 B 100%][0m[33m                                       100% [Working][0m              Fetched 1,849 kB in 1s (2,590 kB/s)
-
-7[0;13r8[1ASelecting previously unselected package 7zip.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 86697 files and directories currently installed.)
-Preparing to unpack .../7zip_23.01+dfsg-11_amd64.deb ...
-7[14;0f[42m[30mProgress: [  0%][49m[39m [.........................................................................] 87[14;0f[42m[30mProgress: [ 11%][49m[39m [########.................................................................] 8Unpacking 7zip (23.01+dfsg-11) ...
-7[14;0f[42m[30mProgress: [ 22%][49m[39m [################.........................................................] 8Selecting previously unselected package p7zip-full.
-Preparing to unpack .../p7zip-full_16.02+transitional.1_all.deb ...
-7[14;0f[42m[30mProgress: [ 33%][49m[39m [########################.................................................] 8Unpacking p7zip-full (16.02+transitional.1) ...
-7[14;0f[42m[30mProgress: [ 44%][49m[39m [################################.........................................] 8Setting up 7zip (23.01+dfsg-11) ...
-7[14;0f[42m[30mProgress: [ 56%][49m[39m [########################################.................................] 87[14;0f[42m[30mProgress: [ 67%][49m[39m [################################################.........................] 8Setting up p7zip-full (16.02+transitional.1) ...
-7[14;0f[42m[30mProgress: [ 78%][49m[39m [########################################################.................] 87[14;0f[42m[30mProgress: [ 89%][49m[39m [################################################################.........] 8Processing triggers for man-db (2.12.0-4build2) ...
-
-7[0;14r8[1A[JScanning processes... [                                                                       ]Scanning processes... [                                                                       ]Scanning processes... [=                                                                      ]Scanning processes... [=                                                                      ]Scanning processes... [==                                                                     ]Scanning processes... [===                                                                    ]Scanning processes... [===                                                                    ]Scanning processes... [====                                                                   ]Scanning processes... [=====                                                                  ]Scanning processes... [=====                                                                  ]Scanning processes... [======                                                                 ]Scanning processes... [======                                                                 ]Scanning processes... [=======                                                                ]Scanning processes... [========                                                               ]Scanning processes... [========                                                               ]Scanning processes... [=========                                                              ]Scanning processes... [==========                                                             ]Scanning processes... [==========                                                             ]Scanning processes... [===========                                                            ]Scanning processes... [===========                                                            ]Scanning processes... [============                                                           ]Scanning processes... [=============                                                          ]Scanning processes... [=============                                                          ]Scanning processes... [==============                                                         ]Scanning processes... [===============                                                        ]Scanning processes... [===============                                                        ]Scanning processes... [================                                                       ]Scanning processes... [================                                                       ]Scanning processes... [=================                                                      ]Scanning processes... [==================                                                     ]Scanning processes... [==================                                                     ]Scanning processes... [===================                                                    ]Scanning processes... [====================                                                   ]Scanning processes... [====================                                                   ]Scanning processes... [=====================                                                  ]Scanning processes... [=====================                                                  ]Scanning processes... [======================                                                 ]Scanning processes... [=======================                                                ]Scanning processes... [=======================                                                ]Scanning processes... [========================                                               ]Scanning processes... [=========================                                              ]Scanning processes... [=========================                                              ]Scanning processes... [==========================                                             ]Scanning processes... [===========================                                            ]Scanning processes... [===========================                                            ]Scanning processes... [============================                                           ]Scanning processes... [============================                                           ]Scanning processes... [=============================                                          ]Scanning processes... [==============================                                         ]Scanning processes... [==============================                                         ]Scanning processes... [===============================                                        ]Scanning processes... [================================                                       ]Scanning processes... [================================                                       ]Scanning processes... [=================================                                      ]Scanning processes... [=================================                                      ]Scanning processes... [==================================                                     ]Scanning processes... [===================================                                    ]Scanning processes... [===================================                                    ]Scanning processes... [====================================                                   ]Scanning processes... [=====================================                                  ]Scanning processes... [=====================================                                  ]Scanning processes... [======================================                                 ]Scanning processes... [======================================                                 ]Scanning processes... [=======================================                                ]Scanning processes... [========================================                               ]Scanning processes... [========================================                               ]Scanning processes... [=========================================                              ]Scanning processes... [==========================================                             ]Scanning processes... [==========================================                             ]Scanning processes... [===========================================                            ]Scanning processes... [===========================================                            ]Scanning processes... [============================================                           ]Scanning processes... [=============================================                          ]Scanning processes... [=============================================                          ]Scanning processes... [==============================================                         ]Scanning processes... [===============================================                        ]Scanning processes... [===============================================                        ]Scanning processes... [================================================                       ]Scanning processes... [=================================================                      ]Scanning processes... [=================================================                      ]Scanning processes... [==================================================                     ]Scanning processes... [==================================================                     ]Scanning processes... [===================================================                    ]Scanning processes... [====================================================                   ]Scanning processes... [====================================================                   ]Scanning processes... [=====================================================                  ]Scanning processes... [======================================================                 ]Scanning processes... [======================================================                 ]Scanning processes... [=======================================================                ]Scanning processes... [=======================================================                ]Scanning processes... [========================================================               ]Scanning processes... [=========================================================              ]Scanning processes... [=========================================================              ]Scanning processes... [==========================================================             ]Scanning processes... [===========================================================            ]Scanning processes... [===========================================================            ]Scanning processes... [============================================================           ]Scanning processes... [============================================================           ]Scanning processes... [=============================================================          ]Scanning processes... [==============================================================         ]Scanning processes... [==============================================================         ]Scanning processes... [===============================================================        ]Scanning processes... [================================================================       ]Scanning processes... [================================================================       ]Scanning processes... [=================================================================      ]Scanning processes... [=================================================================      ]Scanning processes... [==================================================================     ]Scanning processes... [===================================================================    ]Scanning processes... [===================================================================    ]Scanning processes... [====================================================================   ]Scanning processes... [=====================================================================  ]Scanning processes... [=====================================================================  ]Scanning processes... [====================================================================== ]Scanning processes... [=======================================================================]Scanning processes...                                                                          
-Scanning linux images... [                                                                    ]Scanning linux images... [======================                                              ]Scanning linux images... [=============================================                       ]Scanning linux images... [====================================================================]Scanning linux images...                                                                       
-
-Running kernel seems to be up-to-date.
-
-No services need to be restarted.
-
-No containers need to be restarted.
-
-No user sessions are running outdated binaries.
-
-No VM guests are running outdated hypervisor (qemu) binaries on this host.
-[?2004hroot@eltex-practice2-v8:~# [7mtar -cjf /root/etc_backup.tar.bz2 -C /root etc_backup[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctar -cjf /root/etc_backup.tar.bz2 -C /root etc_backup
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7m7z a /root/etc_backup.7z /root/etc_backup[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C7z a /root/etc_backup.7z /root/etc_backup
-[?2004l
-7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20
- 64-bit locale=en_US.UTF-8 Threads:2 OPEN_MAX:1024
-
-Scanning the drive:
-  0M Scan  /root/                 
-WARNING: errno=2 : No such file or directory
-/root/etc_backup/os-release
-
-
-WARNING: errno=2 : No such file or directory
-/root/etc_backup/resolv.conf
-
-
-WARNING: errno=2 : No such file or directory
-/root/etc_backup/mtab
-
-  0M 2 Scan  /root/etc_backup/rc4.d/                                    244 folders, 1507 files, 38698149 bytes (37 MiB)
-
-Creating archive: /root/etc_backup.7z
-
-Add new data to archive: 244 folders, 1507 files, 38698149 bytes (37 MiB)
-
-  0%      0% A etc_backup/alternatives/nawk                                     0% A etc_backup/alternatives/telnet                                       0% A etc_backup/alternatives/unlzma                                       0% 48 + etc_backup/alternatives/pybabel                                           0% 74 + etc_backup/alternatives/which.1.gz                                              1% 540 + etc_backup/fonts/conf.d/10-sub-pixel-rgb.conf                                                          1% 543 + etc_backup/fonts/conf.d/20-unhint-small-dejavu-lgc-sans-mono.conf                                                                              1% 550 + etc_backup/fonts/conf.d/30-metric-aliases.conf                                                           1% 553 + etc_backup/fonts/conf.d/45-latin.conf                                                  1% 557 + etc_backup/fonts/conf.d/51-local.conf                                                  7% 1267 + etc_backup/systemd/system/cloud-final.service.wants/snapd.seeded.service                                                                                      9% 1465 + etc_backup/alternatives/ex                                       16% 1465 + etc_backup/alternatives/ex                                       21% 1474 + etc_backup/alternatives/lzcat                                          25% 1476 + etc_backup/alternatives/mt                                       30% 1483 + etc_backup/alternatives/rmt                                        33% 1484 + etc_backup/alternatives/rview                                          38% 1485 + etc_backup/alternatives/rvim                                         42% 1485 + etc_backup/alternatives/rvim                                         46% 1486 + etc_backup/alternatives/sar                                        50% 1489 + etc_backup/alternatives/vi                                       54% 1489 + etc_backup/alternatives/vi                                       59% 1490 + etc_backup/alternatives/view                                         62% 1490 + etc_backup/alternatives/view                                         64% 1491 + etc_backup/alternatives/vim                                        72% 1491 + etc_backup/alternatives/vim                                        76% 1491 + etc_backup/alternatives/vim                                        80% 1492 + etc_backup/alternatives/vimdiff                                            84% 1492 + etc_backup/alternatives/vimdiff                                            86% 1493 + etc_backup/rmt                           94% 1494 + etc_backup/rmt                           99% 1494 + etc_backup/rmt                          
-Files read from disk: 1494
-Archive size: 4676511 bytes (4567 KiB)
-
-Scan WARNINGS for files and folders:
-
-/root/etc_backup/os-release : errno=2 : No such file or directory
-/root/etc_backup/resolv.conf : errno=2 : No such file or directory
-/root/etc_backup/mtab : errno=2 : No such file or directory
-----------------
-Scan WARNINGS: 3
-[?2004hroot@eltex-practice2-v8:~# [7mls -lh /root/etc_backup.tar.gz /root/etc_backup.tar.bz2 /root/etc_ba[27m[7mc[27m[7mkup.7z[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -lh /root/etc_backup.tar.gz /root/etc_backup.tar.bz2 /root/etc_backup.7z
-[?2004l-rw-r--r-- 1 root root 4.5M Jul  8 05:12 [0m[01;31m/root/etc_backup.7z[0m
--rw-r--r-- 1 root root 547K Jul  8 05:11 [01;31m/root/etc_backup.tar.bz2[0m
--rw-r--r-- 1 root root 581K Jul  8 05:05 [01;31m/root/etc_backup.tar.gz[0m
-[?2004hroot@eltex-practice2-v8:~# [7mecho "$(date)" >> /etc/motd[27mecho "$(date)" >> /etc/motd
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mrsync -a --delete /etc/ /root/etc_backup/[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crsync -a --delete /etc/ /root/etc_backup/
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mtar -rf /root/etc_backup.tar /etc/motd[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctar -rf /root/etc_backup.tar /etc/motd
-[?2004ltar: Removing leading `/' from member names
-tar: Removing leading `/' from hard link targets
-[?2004hroot@eltex-practice2-v8:~# [7mgunzip /root/etc_backup.tar.gz[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgunzip /root/etc_backup.tar.gz
-[?2004lgzip: /root/etc_backup.tar already exists; do you wish to overwrite (y or n)? y
-[?2004hroot@eltex-practice2-v8:~# [7mtar -rf /root/etc_backup.tar /etc/motd[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctar -rf /root/etc_backup.tar /etc/motd
-[?2004ltar: Removing leading `/' from member names
-tar: Removing leading `/' from hard link targets
-[?2004hroot@eltex-practice2-v8:~# [7mgzip /root/etc_backup.tar[27mgzip /root/etc_backup.tar
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mmkdir /root/etc_backup_check[27mmkdir /root/etc_backup_check
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mtar -xjf /root/etc_backup.tar.bz2 -C /root/etc_backup_check[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctar -xjf /root/etc_backup.tar.bz2 -C /root/etc_backup_check
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mdiff -r /root/etc_backup_check/etc_backup /root/etc_backup[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdiff -r /root/etc_backup_check/etc_backup /root/etc_backup
-[?2004ldiff -r /root/etc_backup_check/etc_backup/motd /root/etc_backup/motd
-1a2
-> Wed Jul  8 05:14:50 AM UTC 2026
-diff: /root/etc_backup_check/etc_backup/mtab: No such file or directory
-diff: /root/etc_backup/mtab: No such file or directory
-diff: /root/etc_backup_check/etc_backup/os-release: No such file or directory
-diff: /root/etc_backup/os-release: No such file or directory
-diff: /root/etc_backup_check/etc_backup/resolv.conf: No such file or directory
-diff: /root/etc_backup/resolv.conf: No such file or directory
-[?2004hroot@eltex-practice2-v8:~# [7mmkdir /root/etc_backup_gzip /root/etc_backup_7zip[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmkdir /root/etc_backup_gzip /root/etc_backup_7zip
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mtar -xzf /root/etc_backup.tar.gz -C /root/etc_backup_gzip[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctar -xzf /root/etc_backup.tar.gz -C /root/etc_backup_gzip
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7m7z x /root/etc_backup.7z -o/root/etc_backup_7zip[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C7z x /root/etc_backup.7z -o/root/etc_backup_7zip
-[?2004l
-7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20
- 64-bit locale=en_US.UTF-8 Threads:2 OPEN_MAX:1024
-
-Scanning the drive for archives:
-  0M Scan /root/                1 file, 4676511 bytes (4567 KiB)
-
-Extracting archive: /root/etc_backup.7z
---
-Path = /root/etc_backup.7z
-Type = 7z
-Physical Size = 4676511
-Headers Size = 20665
-Method = LZMA2:24 BCJ
-Solid = +
-Blocks = 2
-
-  0%     70% 1714         Everything is Ok
-
-Folders: 244
-Files: 1507
-Size:       38698149
-Compressed: 4676511
-[?2004hroot@eltex-practice2-v8:~# [7mdiff /root/etc_backup_gzip/etc_backup/etc/motd /root/etc_backup_7zip[27m[7m/[27m[7metc_backup/etc/motd[27m[A[C[C[C[C[C[C[Cdiff /root/etc_backup_gzip/etc_backup/etc/motd /root/etc_backup_7zip/etc_backup/etc/motd
-[?2004ldiff: /root/etc_backup_gzip/etc_backup/etc/motd: No such file or directory
-diff: /root/etc_backup_7zip/etc_backup/etc/motd: No such file or directory
-[?2004hroot@eltex-practice2-v8:~# [7mfind /root/etc_backup_gzip -name motd[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind /root/etc_backup_gzip -name motd
-[?2004l/root/etc_backup_gzip/etc/motd
-/root/etc_backup_gzip/etc_backup/motd
-[?2004hroot@eltex-practice2-v8:~# [7mfind /root/etc_backup_7zip -name motd[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind /root/etc_backup_7zip -name motd
-[?2004l/root/etc_backup_7zip/etc_backup/motd
-[?2004hroot@eltex-practice2-v8:~# diff [K[K[K[K[K[7mdiff /root/etc_backup_gzip/etc_backup/etc/motd /root/etc_backup_7zip[27m[7m/[27m[7mroot/etc_backup/etc/motd[27m[A[C[Cdiff /root/etc_backup_gzip/etc_backup/etc/motd /root/etc_backup_7zip/root/etc_backup/etc/motd
-[?2004ldiff: /root/etc_backup_gzip/etc_backup/etc/motd: No such file or directory
-diff: /root/etc_backup_7zip/root/etc_backup/etc/motd: No such file or directory
-[?2004hroot@eltex-practice2-v8:~# diff /root/etc_backup_gzip/etc_backup/etc/motd /root/etc_backup_7zip/root/etc_backup/etc/motd[A[C[C[31Pfind /root/etc_backup_7zip -name motd
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdiff /root/etc_backup_gzip/etc_backup/etc/motd /root/etc_backup_7zip/root/etc_backup/etc/motd[A[C[C[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdiff [7m/root/etc_backup_gzip/etc/motd[27m/root/etc_backup_gzip/etc/motd [7m/root/etc_backup_7zip/etc_backup[27m[7m/[27m[7mmotd[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/root/etc_backup_7zip/etc_backup/motd
-[?2004l2d1
-< Wed Jul  8 05:14:50 AM UTC 2026
-[?2004hroot@eltex-practice2-v8:~# exit
-[?2004llogout
-Connection to 172.16.9.182 closed.
-[?2004h[01;32meltex-v8@eltex-2026-summer[00m:[01;34m~[00m$ [7mls -lh practice2_${MYUSER}_part1.log[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -lh practice2_${MYUSER}_part1.log
-[?2004l-rw-r--r-- 1 eltex-v8 eltex-v8 88K Jul  8 12:21 practice2_eltex-v8_part1.log
-[?2004h[01;32meltex-v8@eltex-2026-summer[00m:[01;34m~[00m$ [7mcat -v practice2_${MYUSER}_part1.log | head -50[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat -v practice2_${MYUSER}_part1.log | head -50
-[?2004lScript started on 2026-07-08 11:43:49+07:00 [TERM="screen.xterm-256color" TTY="/dev/pts/116" COLUMNS="95" LINES="14"]
-^[[?2004h^[[01;32meltex-v8@eltex-2026-summer^[[00m:^[[01;34m~^[[00m$ screen -r practice2_part1 ^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hls^[[K^H^HS practice2_part1^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hls^[[K^H^H^H^H^Hm^[[C^[[C^[[C^[[C^H^H^H^H^H^H^H^H^Hsh root@172.16.9.182^H^H^H^[[2P8^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[5P172.16.9.8^H^H^H^H^H^H^H^H^H^H-p 22 172.16.9.8^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hcreen -r eltex-v8_part2 ^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hls^[[K^H^H^H^H^H^H^H^H^H^Hcat "${USER}_part3.log"^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[13Pscreen -ls^H^Hr eltex-v8_part2 ^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[5Psh -p 22 172.16.9.8^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[6P172.16.9.8^H^H^H^H^H^H^H^H^H^Hroot@172.16.9.8^H182^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[11Pcreem -ls^H^H^H^H^Hn^[[C^[[C^[[C^[[C^H^HS practice2_part1^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hls^[[K^H^Hr practice2_part1 ^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[K^G^G^[[7mcat "practice2_${MYUSER}_part1.log" | sed 's/\x1b\[[0-9;]*m//g' >^[[27m^[[7m ^[[27m^[[7m"practice2_${MYUSER}_part1_clean.log"^[[27m^[[A^H^H^H^H^H^H^H^Hcat "practice2_${MYUSER}_part1.log" | sed 's/\x1b\[[0-9;]*m//g' > ^[[1P"practice2_${MYUSER}_part1_clean.log^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[ database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 86697 files and directories currently installed.)
-Preparing to unpack .../7zip_23.01+dfsg-11_amd64.deb ...
-7[14;0f[42m[30mProgress: [  0%][49m[39m [.........................................................................] 87[14;0f[42m[30mProgress: [ 11%][49m[39m [########.................................................................] 8Unpacking 7zip (23.01+dfsg-11) ...
-7[14;0f[42m[30mProgress: [ 22%][49m[39m [################.........................................................] 8Selecting previously unselected package p7zip-full.
-Preparing to unpack .../p7zip-full_16.02+transitional.1_all.deb ...
-7[14;0f[42m[30mProgress: [ 33%][49m[39m [########################.................................................] 8Unpacking p7zip-full (16.02+transitional.1) ...
-7[14;0f[42m[30mProgress: [ 44%][49m[39m [################################.........................................] 8Setting up 7zip (23.01+dfsg-11) ...
-7[14;0f[42m[30mProgress: [ 56%][49m[39m [########################################.................................] 87[14;0f[42m[30mProgress: [ 67%][49m[39m [################################################.........................] 8Setting up p7zip-full (16.02+transitional.1) ...
-7[14;0f[42m[30mProgress: [ 78%][49m[39m [########################################################.................] 87[14;0f[42m[30mProgress: [ 89%][49m[39m [################################################################.........] 8Processing triggers for man-db (2.12.0-4build2) ...
-
-7[0;14r8[1A[JScanning processes... [                                                                       ]Scanning processes... [                                                                       ]Scanning processes... [=                                                                      ]Scanning processes... [=                                                                      ]Scanning processes... [==                                                                     ]Scanning processes... [===                                                                    ]Scanning processes... [===                                                                    ]Scanning processes... [====                                                                   ]Scanning processes... [=====                                                                  ]Scanning processes... [=====                                                                  ]Scanning processes... [======                                                                 ]Scanning processes... [======                                                                 ]Scanning processes... [=======                                                                ]Scanning processes... [========                                                               ]Scanning processes... [========                                                               ]Scanning processes... [=========                                                              ]Scanning processes... [==========                                                             ]Scanning processes... [==========                                                             ]Scanning processes... [===========                                                            ]Scanning processes... [===========                                                            ]Scanning processes... [============                                                           ]Scanning processes... [=============                                                          ]Scanning processes... [=============                                                          ]Scanning processes... [==============                                                         ]Scanning processes... [===============                                                        ]Scanning processes... [===============                                                        ]Scanning processes... [================                                                       ]Scanning processes... [================                                                       ]Scanning processes... [=================                                                      ]Scanning processes... [==================                                                     ]Scanning processes... [==================                                                     ]Scanning processes... [===================                                                    ]Scanning processes... [====================                                                   ]Scanning processes... [====================                                                   ]Scanning processes... [=====================                                                  ]Scanning processes... [=====================                                                  ]Scanning processes... [======================                                                 ]Scanning processes... [=======================                                                ]Scanning processes... [=======================                                                ]Scanning processes... [========================                                               ]Scanning processes... [=========================                                              ]Scanning processes... [=========================                                              ]Scanning processes... [==========================                                             ]Scanning processes... [===========================                                            ]Scanning processes... [===========================                                            ]Scanning processes... [============================                                           ]Scanning processes... [============================                                           ]Scanning processes... [=============================                                          ]Scanning processes... [==============================                                         ]Scanning processes... [==============================                                         ]Scanning processes... [===============================                                        ]Scanning processes... [================================                                       ]Scanning processes... [================================                                       ]Scanning processes... [=================================                                      ]Scanning processes... [=================================                                      ]Scanning processes... [==================================                                     ]Scanning processes... [===================================                                    ]Scanning processes... [===================================                                    ]Scanning processes... [====================================                                   ]Scanning processes... [=====================================                                  ]Scanning processes... [=====================================                                  ]Scanning processes... [======================================                                 ]Scanning processes... [======================================                                 ]Scanning processes... [=======================================                                ]Scanning processes... [========================================                               ]Scanning processes... [========================================                               ]Scanning processes... [=========================================                              ]Scanning processes... [==========================================                             ]Scanning processes... [==========================================                             ]Scanning processes... [===========================================                            ]Scanning processes... [===========================================                            ]Scanning processes... [============================================                           ]Scanning processes... [=============================================                          ]Scanning processes... [=============================================                          ]Scanning processes... [==============================================                         ]Scanning processes... [===============================================                        ]Scanning processes... [===============================================                        ]Scanning processes... [================================================                       ]Scanning processes... [=================================================                      ]Scanning processes... [=================================================                      ]Scanning processes... [==================================================                     ]Scanning processes... [==================================================                     ]Scanning processes... [===================================================                    ]Scanning processes... [====================================================                   ]Scanning processes... [====================================================                   ]Scanning processes... [=====================================================                  ]Scanning processes... [======================================================                 ]Scanning processes... [======================================================                 ]Scanning processes... [=======================================================                ]Scanning processes... [=======================================================                ]Scanning processes... [========================================================               ]Scanning processes... [=========================================================              ]Scanning processes... [=========================================================              ]Scanning processes... [==========================================================             ]Scanning processes... [===========================================================            ]Scanning processes... [===========================================================            ]Scanning processes... [============================================================           ]Scanning processes... [============================================================           ]Scanning processes... [=============================================================          ]Scanning processes... [==============================================================         ]Scanning processes... [==============================================================         ]Scanning processes... [===============================================================        ]Scanning processes... [================================================================       ]Scanning processes... [================================================================       ]Scanning processes... [=================================================================      ]Scanning processes... [=================================================================      ]Scanning processes... [==================================================================     ]Scanning processes... [===================================================================    ]Scanning processes... [===================================================================    ]Scanning processes... [====================================================================   ]Scanning processes... [=====================================================================  ]Scanning processes... [=====================================================================  ]Scanning processes... [====================================================================== ]Scanning processes... [=======================================================================]Scanning processes...                                                                          
-Scanning linux images... [                                                                    ]Scanning linux images... [======================                                              ]Scanning linux images... [=============================================                       ]Scanning linux images... [====================================================================]Scanning linux images...                                                                       
-
-Running kernel seems to be up-to-date.
-
-No services need to be restarted.
-
-No containers need to be restarted.
-
-No user sessions are running outdated binaries.
-
-No VM guests are running outdated hypervisor (qemu) binaries on this host.
-[?2004hroot@eltex-practice2-v8:~# [7mtar -cjf /root/etc_backup.tar.bz2 -C /root etc_backup[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctar -cjf /root/etc_backup.tar.bz2 -C /root etc_backup
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7m7z a /root/etc_backup.7z /root/etc_backup[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C7z a /root/etc_backup.7z /root/etc_backup
-[?2004l
-7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20
- 64-bit locale=en_US.UTF-8 Threads:2 OPEN_MAX:1024
-
-Scanning the drive:
-  0M Scan  /root/                 
-WARNING: errno=2 : No such file or directory
-/root/etc_backup/os-release
-
-
-WARNING: errno=2 : No such file or directory
-/root/etc_backup/resolv.conf
-
-
-WARNING: errno=2 : No such file or directory
-/root/etc_backup/mtab
-
-  0M 2 Scan  /root/etc_backup/rc4.d/                                    244 folders, 1507 files, 38698149 bytes (37 MiB)
-
-Creating archive: /root/etc_backup.7z
-
-Add new data to archive: 244 folders, 1507 files, 38698149 bytes (37 MiB)
-
-  0%      0% A etc_backup/alternatives/nawk                                     0% A etc_backup/alternatives/telnet                                       0% A etc_backup/alternatives/unlzma                                       0% 48 + etc_backup/alternatives/pybabel                                           0% 74 + etc_backup/alternatives/which.1.gz                                              1% 540 + etc_backup/fonts/conf.d/10-sub-pixel-rgb.conf                                                          1% 543 + etc_backup/fonts/conf.d/20-unhint-small-dejavu-lgc-sans-mono.conf                                                                              1% 550 + etc_backup/fonts/conf.d/30-metric-aliases.conf                                                           1% 553 + etc_backup/fonts/conf.d/45-latin.conf                                                  1% 557 + etc_backup/fonts/conf.d/51-local.conf                                                  7% 1267 + etc_backup/systemd/system/cloud-final.service.wants/snapd.seeded.service                                                                                      9% 1465 + etc_backup/alternatives/ex                                       16% 1465 + etc_backup/alternatives/ex                                       21% 1474 + etc_backup/alternatives/lzcat                                          25% 1476 + etc_backup/alternatives/mt                                       30% 1483 + etc_backup/alternatives/rmt                                        33% 1484 + etc_backup/alternatives/rview                                          38% 1485 + etc_backup/alternatives/rvim                                         42% 1485 + etc_backup/alternatives/rvim                                         46% 1486 + etc_backup/alternatives/sar                                        50% 1489 + etc_backup/alternatives/vi                                       54% 1489 + etc_backup/alternatives/vi                                       59% 1490 + etc_backup/alternatives/view                                         62% 1490 + etc_backup/alternatives/view                                         64% 1491 + etc_backup/alternatives/vim                                        72% 1491 + etc_backup/alternatives/vim                                        76% 1491 + etc_backup/alternatives/vim                                        80% 1492 + etc_backup/alternatives/vimdiff                                            84% 1492 + etc_backup/alternatives/vimdiff                                            86% 1493 + etc_backup/rmt                           94% 1494 + etc_backup/rmt                           99% 1494 + etc_backup/rmt                          
-Files read from disk: 1494
-Archive size: 4676511 bytes (4567 KiB)
-
-Scan WARNINGS for files and folders:
-
-/root/etc_backup/os-release : errno=2 : No such file or directory
-/root/etc_backup/resolv.conf : errno=2 : No such file or directory
-/root/etc_backup/mtab : errno=2 : No such file or directory
-----------------
-Scan WARNINGS: 3
-[?2004hroot@eltex-practice2-v8:~# [7mls -lh /root/etc_backup.tar.gz /root/etc_backup.tar.bz2 /root/etc_ba[27m[7mc[27m[7mkup.7z[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -lh /root/etc_backup.tar.gz /root/etc_backup.tar.bz2 /root/etc_backup.7z
-[?2004l-rw-r--r-- 1 root root 4.5M Jul  8 05:12 [0m[01;31m/root/etc_backup.7z[0m
--rw-r--r-- 1 root root 547K Jul  8 05:11 [01;31m/root/etc_backup.tar.bz2[0m
--rw-r--r-- 1 root root 581K Jul  8 05:05 [01;31m/root/etc_backup.tar.gz[0m
-[?2004hroot@eltex-practice2-v8:~# [7mecho "$(date)" >> /etc/motd[27mecho "$(date)" >> /etc/motd
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mrsync -a --delete /etc/ /root/etc_backup/[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crsync -a --delete /etc/ /root/etc_backup/
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mtar -rf /root/etc_backup.tar /etc/motd[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctar -rf /root/etc_backup.tar /etc/motd
-[?2004ltar: Removing leading `/' from member names
-tar: Removing leading `/' from hard link targets
-[?2004hroot@eltex-practice2-v8:~# [7mgunzip /root/etc_backup.tar.gz[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgunzip /root/etc_backup.tar.gz
-[?2004lgzip: /root/etc_backup.tar already exists; do you wish to overwrite (y or n)? y
-[?2004hroot@eltex-practice2-v8:~# [7mtar -rf /root/etc_backup.tar /etc/motd[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctar -rf /root/etc_backup.tar /etc/motd
-[?2004ltar: Removing leading `/' from member names
-tar: Removing leading `/' from hard link targets
-[?2004hroot@eltex-practice2-v8:~# [7mgzip /root/etc_backup.tar[27mgzip /root/etc_backup.tar
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mmkdir /root/etc_backup_check[27mmkdir /root/etc_backup_check
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mtar -xjf /root/etc_backup.tar.bz2 -C /root/etc_backup_check[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctar -xjf /root/etc_backup.tar.bz2 -C /root/etc_backup_check
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mdiff -r /root/etc_backup_check/etc_backup /root/etc_backup[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdiff -r /root/etc_backup_check/etc_backup /root/etc_backup
-[?2004ldiff -r /root/etc_backup_check/etc_backup/motd /root/etc_backup/motd
-1a2
-> Wed Jul  8 05:14:50 AM UTC 2026
-diff: /root/etc_backup_check/etc_backup/mtab: No such file or directory
-diff: /root/etc_backup/mtab: No such file or directory
-diff: /root/etc_backup_check/etc_backup/os-release: No such file or directory
-diff: /root/etc_backup/os-release: No such file or directory
-diff: /root/etc_backup_check/etc_backup/resolv.conf: No such file or directory
-diff: /root/etc_backup/resolv.conf: No such file or directory
-[?2004hroot@eltex-practice2-v8:~# [7mmkdir /root/etc_backup_gzip /root/etc_backup_7zip[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmkdir /root/etc_backup_gzip /root/etc_backup_7zip
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7mtar -xzf /root/etc_backup.tar.gz -C /root/etc_backup_gzip[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctar -xzf /root/etc_backup.tar.gz -C /root/etc_backup_gzip
-[?2004l[?2004hroot@eltex-practice2-v8:~# [7m7z x /root/etc_backup.7z -o/root/etc_backup_7zip[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C7z x /root/etc_backup.7z -o/root/etc_backup_7zip
-[?2004l
-7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20
- 64-bit locale=en_US.UTF-8 Threads:2 OPEN_MAX:1024
-
-Scanning the drive for archives:
-  0M Scan /root/                1 file, 4676511 bytes (4567 KiB)
-
-Extracting archive: /root/etc_backup.7z
---
-Path = /root/etc_backup.7z
-Type = 7z
-Physical Size = 4676511
-Headers Size = 20665
-Method = LZMA2:24 BCJ
-Solid = +
-Blocks = 2
-
-  0%     70% 1714         Everything is Ok
-
-Folders: 244
-Files: 1507
-Size:       38698149
-Compressed: 4676511
-[?2004hroot@eltex-practice2-v8:~# [7mdiff /root/etc_backup_gzip/etc_backup/etc/motd /root/etc_backup_7zip[27m[7m/[27m[7metc_backup/etc/motd[27m[A[C[C[C[C[C[C[Cdiff /root/etc_backup_gzip/etc_backup/etc/motd /root/etc_backup_7zip/etc_backup/etc/motd
-[?2004ldiff: /root/etc_backup_gzip/etc_backup/etc/motd: No such file or directory
-diff: /root/etc_backup_7zip/etc_backup/etc/motd: No such file or directory
-[?2004hroot@eltex-practice2-v8:~# [7mfind /root/etc_backup_gzip -name motd[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind /root/etc_backup_gzip -name motd
-[?2004l/root/etc_backup_gzip/etc/motd
-/root/etc_backup_gzip/etc_backup/motd
-[?2004hroot@eltex-practice2-v8:~# [7mfind /root/etc_backup_7zip -name motd[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind /root/etc_backup_7zip -name motd
-[?2004l/root/etc_backup_7zip/etc_backup/motd
-[?2004hroot@eltex-practice2-v8:~# diff [K[K[K[K[K[7mdiff /root/etc_backup_gzip/etc_backup/etc/motd /root/etc_backup_7zip[27m[7m/[27m[7mroot/etc_backup/etc/motd[27m[A[C[Cdiff /root/etc_backup_gzip/etc_backup/etc/motd /root/etc_backup_7zip/root/etc_backup/etc/motd
-[?2004ldiff: /root/etc_backup_gzip/etc_backup/etc/motd: No such file or directory
-diff: /root/etc_backup_7zip/root/etc_backup/etc/motd: No such file or directory
-[?2004hroot@eltex-practice2-v8:~# diff /root/etc_backup_gzip/etc_backup/etc/motd /root/etc_backup_7zip/root/etc_backup/etc/motd[A[C[C[31Pfind /root/etc_backup_7zip -name motd
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdiff /root/etc_backup_gzip/etc_backup/etc/motd /root/etc_backup_7zip/root/etc_backup/etc/motd[A[C[C[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdiff [7m/root/etc_backup_gzip/etc/motd[27m/root/etc_backup_gzip/etc/motd [7m/root/etc_backup_7zip/etc_backup[27m[7m/[27m[7mmotd[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/root/etc_backup_7zip/etc_backup/motd
-[?2004l2d1
-< Wed Jul  8 05:14:50 AM UTC 2026
-[?2004hroot@eltex-practice2-v8:~# exit
-[?2004llogout
-Connection to 172.16.9.182 closed.
-[?2004h[01;32meltex-v8@eltex-2026-summer[00m:[01;34m~[00m$ [7mls -lh practice2_${MYUSER}_part1.log[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -lh practice2_${MYUSER}_part1.log
-[?2004l-rw-r--r-- 1 eltex-v8 eltex-v8 88K Jul  8 12:21 practice2_eltex-v8_part1.log
-[?2004h[01;32meltex-v8@eltex-2026-summer[00m:[01;34m~[00m$ [7mcat -v practice2_${MYUSER}_part1.log | head -50[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat -v practice2_${MYUSER}_part1.log | head -50
-[?2004lScript started on 2026-07-08 11:43:49+07:00 [TERM="screen.xterm-256color" TTY="/dev/pts/116" COLUMNS="95" LINES="14"]
-^[[?2004h^[[01;32meltex-v8@eltex-2026-summer^[[00m:^[[01;34m~^[[00m$ screen -r practice2_part1 ^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hls^[[K^H^HS practice2_part1^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hls^[[K^H^H^H^H^Hm^[[C^[[C^[[C^[[C^H^H^H^H^H^H^H^H^Hsh root@172.16.9.182^H^H^H^[[2P8^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[5P172.16.9.8^H^H^H^H^H^H^H^H^H^H-p 22 172.16.9.8^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hcreen -r eltex-v8_part2 ^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hls^[[K^H^H^H^H^H^H^H^H^H^Hcat "${USER}_part3.log"^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[13Pscreen -ls^H^Hr eltex-v8_part2 ^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[5Psh -p 22 172.16.9.8^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[6P172.16.9.8^H^H^H^H^H^H^H^H^H^Hroot@172.16.9.8^H182^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[11Pcreem -ls^H^H^H^H^Hn^[[C^[[C^[[C^[[C^H^HS practice2_part1^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hls^[[K^H^Hr practice2_part1 ^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[K^G^G^[[7mcat "practice2_${MYUSER}_part1.log" | sed 's/\x1b\[[0-9;]*m//g' >^[[27m^[[7m ^[[27m^[[7m"practice2_${MYUSER}_part1_clean.log"^[[27m^[[A^H^H^H^H^H^H^H^Hcat "practice2_${MYUSER}_part1.log" | sed 's/\x1b\[[0-9;]*m//g' > ^[[1P"practice2_${MYUSER}_part1_clean.log^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^M^[[K^[[A^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[K^M
-^M^[[K^[[A^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^G^G^G^G^G^G^G^G^G^G^G^G^[[7mcat -v "practice2_${MYUSER}_part1.log" | head -50^[[27m^G^M^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[Ccat -v "practice2_${MYUSER}_part1.log" | head -50^M
-^[[?2004l^M^[[?2004h^[[01;32meltex-v8@eltex-2026-summer^[[00m:^[[01;34m~^[[00m$ ssh ^H^[[K^H^[[K^H^[[K^H^[[K^G^G^G^G^Gcat -v "practice2_${MYUSER}_part1.log" | head -50^M^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[23Pscreen -r practice2_part1 ^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hls^[[K^H^HS practice2_part1^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hls^[[K^H^H^H^H^Hm^[[C^[[C^[[C^[[C^H^H^H^H^H^H^H^H^Hsh root@172.16.9.182^H^H^H^[[2P8^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[5P172.16.9.8^H^H^H^H^H^H^H^H^H^Hroot@172.16.9.8^H182^M
-^[[?2004l^MWelcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-55-generic x86_64)^M
-^M
- * Documentation:  https://help.ubuntu.com^M
- * Management:     https://landscape.canonical.com^M
- * Support:        https://ubuntu.com/pro^M
-^M
- System information as of Wed Jul  8 04:45:09 AM UTC 2026^M
-^M
-  System load:  0.02               Processes:              109^M
-  Usage of /:   37.8% of 14.66GB   Users logged in:        0^M
-  Memory usage: 5%                 IPv4 address for ens18: 172.16.9.182^M
-  Swap usage:   0%^M
-^M
-^M
-Expanded Security Maintenance for Applications is not enabled.^M
-^M
-0 updates can be applied immediately.^M
-^M
-Enable ESM Apps to receive additional future security updates.^M
-See https://ubuntu.com/esm or run: sudo pro status^M
-^M
-^M
-The list of available updates is more than a week old.^M
-To check for new updates run: sudo apt update^M
-^M
-Last login: Wed Jul  8 04:38:13 2026 from 172.16.8
