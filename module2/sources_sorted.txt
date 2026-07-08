@@ -1,0 +1,294 @@
+:      TTY=pts/0 ; PWD=/home/user1 ; USER=root ; COMMAND=/usr/bin/dmesg
+:      TTY=tty1 ; PWD=/home/tech ; USER=root ; COMMAND=/usr/bin/su -
+2      logged out. Waiting for processes to exit.
+27      logged out. Waiting for processes to exit.
+29      logged out. Waiting for processes to exit.
+32      logged out. Waiting for processes to exit.
+35      logged out. Waiting for processes to exit.
+37      logged out. Waiting for processes to exit.
+38      logged out. Waiting for processes to exit.
+41      logged out. Waiting for processes to exit.
+added      to /etc/group: name=shareusers, GID=1004
+added      to /etc/group: name=user2, GID=1002
+added      to /etc/group: name=user3, GID=1003
+added      to /etc/gshadow: name=shareusers
+added      to /etc/gshadow: name=user2
+added      to /etc/gshadow: name=user3
+adding      faulty module: pam_lastlog.so
+closed      by 172.16.8.4 port 38674 [preauth]
+closed      by authenticating user root 172.16.8.4 port 57654 [preauth]
+closed      by authenticating user root 172.16.8.4 port 57660 [preauth]
+closed      by authenticating user root 172.16.8.4 port 60000 [preauth]
+disconnect      from 172.16.8.4 port 38374:11: disconnected by user
+disconnect      from 172.16.8.4 port 39226:11: disconnected by user
+disconnect      from 172.16.8.4 port 42804:11: disconnected by user
+disconnect      from 172.16.8.4 port 47492:11: disconnected by user
+disconnect      from 172.16.8.4 port 57670:11: disconnected by user
+disconnect      from 172.16.8.4 port 58460:11: disconnected by user
+disconnect      from 172.16.8.4 port 60008:11: disconnected by user
+disconnect      from 172.16.8.4 port 60012:11: disconnected by user
+for      'tech' changed by 'root'
+from      user root 172.16.8.4 port 38374
+from      user root 172.16.8.4 port 39226
+from      user root 172.16.8.4 port 42804
+from      user root 172.16.8.4 port 47492
+from      user root 172.16.8.4 port 57670
+from      user root 172.16.8.4 port 58460
+from      user root 172.16.8.4 port 60008
+from      user root 172.16.8.4 port 60012
+garbage      unconditionally...
+garbage      unconditionally...
+garbage      unconditionally...
+garbage      unconditionally...
+group:      name=shareusers, GID=1004
+group:      name=tech, GID=1000
+group:      name=user1, GID=1001
+group:      name=user2, GID=1002
+group:      name=user3, GID=1003
+is      powering down (hypervisor initiated shutdown).
+is      rebooting.
+listening      on :: port 22.
+listening      on :: port 22.
+loading,      compiling and executing 6 rules
+loading,      compiling and executing 6 rules
+loading,      compiling and executing 6 rules
+loading,      compiling and executing 6 rules
+loading,      compiling and executing 6 rules
+loading,      compiling and executing 6 rules
+loading,      compiling and executing 6 rules
+loading,      compiling and executing 6 rules
+login      by root (UID: 1003) on /dev/pts/0
+of      group users set by root to user2
+of      group users set by root to user2,user3
+password      changed for root
+password      changed for root
+password      changed for user1
+password      changed for user2
+password      changed for user3
+password      expiry for user1
+password      expiry for user2
+password      expiry for user3
+password      for root from 172.16.8.4 port 39226 ssh2
+password      for root from 172.16.8.4 port 42804 ssh2
+password      for root from 172.16.8.4 port 47492 ssh2
+password      for root from 172.16.8.4 port 49902 ssh2
+password      for root from 172.16.8.4 port 57670 ssh2
+publickey      for root from 172.16.8.4 port 38374 ssh2: ED25519 SHA256:nf2weldGRzKV9aHkMM8eHtbQ63Zq0AWv20Uz19jjBy8
+publickey      for root from 172.16.8.4 port 54330 ssh2: ED25519 SHA256:nf2weldGRzKV9aHkMM8eHtbQ63Zq0AWv20Uz19jjBy8
+publickey      for root from 172.16.8.4 port 58460 ssh2: ED25519 SHA256:nf2weldGRzKV9aHkMM8eHtbQ63Zq0AWv20Uz19jjBy8
+publickey      for root from 172.16.8.4 port 60008 ssh2: ED25519 SHA256:nf2weldGRzKV9aHkMM8eHtbQ63Zq0AWv20Uz19jjBy8
+publickey      for root from 172.16.8.4 port 60012 ssh2: ED25519 SHA256:nf2weldGRzKV9aHkMM8eHtbQ63Zq0AWv20Uz19jjBy8
+root)      root on pts/0
+rules     
+rules     
+rules     
+rules     
+rules      from directory /etc/polkit-1/rules.d
+rules      from directory /etc/polkit-1/rules.d
+rules      from directory /etc/polkit-1/rules.d
+rules      from directory /etc/polkit-1/rules.d
+rules      from directory /etc/polkit-1/rules.d
+rules      from directory /etc/polkit-1/rules.d
+rules      from directory /etc/polkit-1/rules.d
+rules      from directory /etc/polkit-1/rules.d
+rules      from directory /usr/share/polkit-1/rules.d
+rules      from directory /usr/share/polkit-1/rules.d
+rules      from directory /usr/share/polkit-1/rules.d
+rules      from directory /usr/share/polkit-1/rules.d
+rules      from directory /usr/share/polkit-1/rules.d
+rules      from directory /usr/share/polkit-1/rules.d
+rules      from directory /usr/share/polkit-1/rules.d
+rules      from directory /usr/share/polkit-1/rules.d
+/run/nologin,      blocking further logins...
+seat      seat0.
+seat      seat0.
+seat      seat0.
+seat      seat0.
+session      1 of user tech.
+session      2.
+session      27.
+session      27 of user root.
+session      29.
+session      29 of user root.
+session      2 of user root.
+session      32.
+session      32 of user root.
+session      35.
+session      35 of user root.
+session      37.
+session      37 of user root.
+session      38.
+session      38 of user root.
+session      41.
+session      41 of user root.
+session      48 of user root.
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user root
+session      closed for user user1
+session      closed for user user1
+session      closed for user user1
+session      closed for user user2
+session      closed for user user2
+session      closed for user user2
+session      closed for user user3
+session      closed for user user3
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=0)
+session      opened for user root(uid=0) by root(uid=1001)
+session      opened for user root(uid=0) by tech(uid=0)
+session      opened for user root(uid=0) by tech(uid=1000)
+session      opened for user tech(uid=1000) by tech(uid=0)
+session      opened for user tech(uid=1000) by tech(uid=0)
+session      opened for user user1(uid=1001) by root(uid=0)
+session      opened for user user1(uid=1001) by root(uid=0)
+session      opened for user user1(uid=1001) by root(uid=0)
+session      opened for user user2(uid=1002) by root(uid=0)
+session      opened for user user2(uid=1002) by root(uid=0)
+session      opened for user user2(uid=1002) by root(uid=0)
+session      opened for user user3(uid=1003) by root(uid=0)
+session      opened for user user3(uid=1003) by root(uid=0)
+system      buttons on /dev/input/event0 (Power Button)
+system      buttons on /dev/input/event0 (Power Button)
+system      buttons on /dev/input/event0 (Power Button)
+system      buttons on /dev/input/event0 (Power Button)
+system      buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+system      buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+system      buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+system      buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+system      will reboot now!
+'tech'      to group 'adm'
+'tech'      to group 'cdrom'
+'tech'      to group 'dip'
+'tech'      to group 'lxd'
+'tech'      to group 'plugdev'
+'tech'      to group 'sudo'
+'tech'      to shadow group 'adm'
+'tech'      to shadow group 'cdrom'
+'tech'      to shadow group 'dip'
+'tech'      to shadow group 'lxd'
+'tech'      to shadow group 'plugdev'
+'tech'      to shadow group 'sudo'
+the      name org.freedesktop.PolicyKit1 on the system bus
+the      name org.freedesktop.PolicyKit1 on the system bus
+the      name org.freedesktop.PolicyKit1 on the system bus
+the      name org.freedesktop.PolicyKit1 on the system bus
+unable      to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+user      'user2' information
+user      'user3' information
+user      'user3' shell from '/bin/bash' to '/usr/sbin/nologin'
+user:      name=tech, UID=1000, GID=1000, home=/home/tech, shell=/bin/bash, from=none
+user:      name=user1, UID=1001, GID=1001, home=/home/user1, shell=/bin/bash, from=/dev/pts/0
+user:      name=user2, UID=1002, GID=1002, home=/home/user2, shell=/bin/bash, from=/dev/pts/0
+user:      name=user3, UID=1003, GID=1003, home=/home/user3, shell=/bin/bash, from=/dev/pts/0
+'user1'      to group 'shareusers'
+'user1'      to shadow group 'shareusers'
+user1)      root on pts/0
+user1)      root on pts/0
+user1)      root on pts/0
+'user2'      to group 'shareusers'
+'user2'      to shadow group 'shareusers'
+user2)      root on pts/0
+user2)      root on pts/0
+user2)      root on pts/0
+'user3'      to group 'shareusers'
+'user3'      to shadow group 'shareusers'
+user3)      root on pts/0
+user3)      root on pts/0
