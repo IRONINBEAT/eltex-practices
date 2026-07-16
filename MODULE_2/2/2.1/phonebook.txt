@@ -1,0 +1,22 @@
+[contact]
+surname=Воронин
+name=Илья
+patronymic=Петрович
+workplace=Eltex
+position=Программист
+phone=89231917017
+email=ilyavoron2004@gmail.com
+email=voron282282@yandex.ru
+social=vk
+social=inst
+messenger=tg
+messenger=whastapp
+messenger=MAX :(
+
+[contact]
+surname=Иванов
+name=Иван
+patronymic=Иванович
+workplace=Eltex
+position=CEO
+
