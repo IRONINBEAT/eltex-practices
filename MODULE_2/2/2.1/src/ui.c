@@ -1,3 +1,4 @@
+#include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -83,6 +84,30 @@ static void input_contact(Contact *c)
                 &c->messenger_count);
 }
 
+/* Печатает "label: v1 v2 ..." из непустых значений. */
+static void print_fields(const char *label, ...)
+{
+    va_list ap;
+    const char *s;
+    int printed = 0;
+
+    va_start(ap, label);
+    while ((s = va_arg(ap, const char *)) != NULL) {
+        if (s[0] == '\0')
+            continue;
+        if (printed) {
+            printf(" %s", s);
+        } else {
+            printf("%s: %s", label, s);
+            printed = 1;
+        }
+    }
+    va_end(ap);
+
+    if (printed)
+        printf("\n");
+}
+
 static void print_multivalue(const char *title, const char *base,
                              size_t item_size, size_t count)
 {
@@ -96,15 +121,9 @@ static void print_multivalue(const char *title, const char *base,
 static void print_contact(const Contact *c, size_t number)
 {
     printf("--- Контакт #%zu ---\n", number);
-    printf("ФИО: %s %s", c->surname, c->name);
-    if (c->patronymic[0])
-        printf(" %s", c->patronymic);
-    printf("\n");
-
-    if (c->workplace[0])
-        printf("Место работы: %s\n", c->workplace);
-    if (c->position[0])
-        printf("Должность:    %s\n", c->position);
+    print_fields("ФИО", c->surname, c->name, c->patronymic, NULL);
+    print_fields("Место работы", c->workplace, NULL);
+    print_fields("Должность", c->position, NULL);
 
     print_multivalue("Телефоны", &c->phones[0][0],
                      PHONE_LEN, c->phone_count);
