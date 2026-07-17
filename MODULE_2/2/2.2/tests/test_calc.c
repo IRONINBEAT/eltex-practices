@@ -14,7 +14,7 @@ static int tests_failed;
     }                                                                 \
 } while (0)
 
-/* Точное == для дробных небезопасно */
+/* == для дробных небезопасно */
 static int approx(double a, double b)
 {
     return fabs(a - b) < 1e-9;
@@ -88,6 +88,30 @@ static void test_strerror(void)
     ASSERT(calc_strerror(CALC_RANGE)[0] != '\0');
 }
 
+static void test_edge_cases(void)
+{
+    double r;
+
+    /* pow(0,0) по стандарту C равен 1, а не ошибка */
+    ASSERT(calc_pow(0, 0, &r) == CALC_OK && approx(r, 1));
+    /* ноль в отрицательной степени — бесконечность */
+    ASSERT(calc_pow(0, -1, &r) == CALC_RANGE);
+
+    /* остаток берёт знак делимого, а не делителя */
+    ASSERT(calc_mod(-10, 3, &r) == CALC_OK && approx(r, -1));
+    ASSERT(calc_mod(10, -3, &r) == CALC_OK && approx(r, 1));
+
+    /* -0.0 == 0.0 по IEEE, значит тоже деление на ноль */
+    ASSERT(calc_div(5, -0.0, &r) == CALC_DIV_ZERO);
+    /* ноль, делённый на что-то, — не ошибка */
+    ASSERT(calc_div(0, 5, &r) == CALC_OK && approx(r, 0));
+
+    /* переполнение в минус бесконечность */
+    ASSERT(calc_sub(-1e308, 1e308, &r) == CALC_RANGE);
+    /* потеря точности не считается ошибкой */
+    ASSERT(calc_add(1e308, 1, &r) == CALC_OK && approx(r, 1e308));
+}
+
 int main(void)
 {
     test_add();
@@ -98,6 +122,7 @@ int main(void)
     test_mod();
     test_sqrt();
     test_strerror();
+    test_edge_cases();
 
     printf("Тестов выполнено: %d, провалено: %d\n",
            tests_run, tests_failed);

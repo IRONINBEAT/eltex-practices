@@ -14,9 +14,8 @@ messenger=whastapp
 messenger=MAX :(
 
 [contact]
-surname=Иванов
-name=Иван
-patronymic=Иванович
-workplace=Eltex
+surname=Петров
+name=Петр
 position=CEO
+phone=76567
 

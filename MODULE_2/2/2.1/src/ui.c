@@ -181,7 +181,7 @@ static int ask_index(const PhoneBook *pb, size_t *index)
 }
 
 /* Пустой ввод оставляет старое значение. Для обязательных полей это
- * и гарантирует, что их нельзя очистить при редактировании. */
+ * гарантирует, что их нельзя очистить при редактировании. */
 static void edit_field(const char *title, char *buf, size_t size)
 {
     char tmp[TEXT_LEN];
