@@ -15,7 +15,7 @@ void pb_free(PhoneBook *pb)
     PbNode *n = pb->head;
 
     while (n != NULL) {
-        PbNode *next = n->next; /* запомнить до free: после — мусор */
+        PbNode *next = n->next;
         free(n);
         n = next;
     }
