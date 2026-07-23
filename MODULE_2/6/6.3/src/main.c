@@ -9,8 +9,6 @@ int main(int argc, char **argv)
     const char *dir = argc > 1 ? argv[1] : PLUGIN_DEFAULT_DIR;
     int n;
 
-    /* При перенаправлении вывода stdout буферизуется блоками, а stderr
-     * нет — построчный режим сохраняет порядок сообщений. */
     setvbuf(stdout, NULL, _IOLBF, 0);
 
     plugins_init(&pl);

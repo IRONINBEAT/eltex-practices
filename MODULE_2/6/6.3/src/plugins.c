@@ -25,8 +25,6 @@ static int is_library(const char *name)
     return 0;
 }
 
-/* Для qsort: имена файлов сортируются, чтобы порядок пунктов меню
- * не зависел от порядка выдачи readdir */
 static int cmp_names(const void *a, const void *b)
 {
     return strcmp(*(const char *const *)a, *(const char *const *)b);
@@ -98,8 +96,6 @@ int plugins_load(PluginList *pl, const char *dir)
     if (d == NULL)
         return -1;
 
-    /* Сначала собираем имена, потом сортируем: readdir выдаёт файлы
-     * в порядке файловой системы, а меню должно быть стабильным. */
     while ((e = readdir(d)) != NULL) {
         if (!is_library(e->d_name))
             continue;
