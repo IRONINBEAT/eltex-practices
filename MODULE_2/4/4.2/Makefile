@@ -1,7 +1,7 @@
 CC      = gcc
 CFLAGS  = -std=c11 -Wall -Wextra -Iinclude
 
-SRC     = src/pqueue.c src/main.c
+SRC     = src/pqueue.c src/ui.c src/main.c
 TESTSRC = src/pqueue.c tests/test_pqueue.c
 
 all: pqueue
