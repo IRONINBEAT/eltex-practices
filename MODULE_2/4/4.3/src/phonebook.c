@@ -43,8 +43,7 @@ int contact_cmp(const Contact *a, const Contact *b)
 
 /* ---------- обход in-order ---------- */
 
-/* Рекурсивно кладёт узлы поддерева в массив по порядку (левое, узел,
- * правое). *i — текущая позиция записи. */
+
 static void collect_nodes(TreeNode *n, TreeNode **arr, size_t *i)
 {
     if (n == NULL)

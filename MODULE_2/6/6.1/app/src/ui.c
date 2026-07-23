@@ -84,6 +84,10 @@ static void input_contact(Contact *c)
                 &c->messenger_count);
 }
 
+/* Печатает "label: v1 v2 ..." из непустых значений, пустые пропускает.
+ * Если непустых нет, не печатает ничего — даже метку.
+ * Список значений ОБЯЗАН заканчиваться NULL: количество аргументов
+ * функция узнать не может. */
 static void print_fields(const char *label, ...)
 {
     va_list ap;
@@ -135,100 +139,26 @@ static void print_contact(const Contact *c, size_t number)
 }
 
 /* reverse=0 — от головы по next (а -> я), reverse=1 — от хвоста
- * reverse=1 — от конца к началу (я -> а); нумерация алфавитная */
+ * по prev (я -> а); нумерация в обоих случаях алфавитная */
 static void action_list(const PhoneBook *pb, int reverse)
 {
-    const Contact **snap;
-    size_t n = pb_count(pb);
+    size_t number;
 
-    if (n == 0) {
+    if (pb_count(pb) == 0) {
         printf("Телефонная книга пуста.\n");
         return;
     }
 
-    snap = malloc(n * sizeof(*snap));
-    if (snap == NULL) {
-        printf("Ошибка: не удалось выделить память.\n");
-        return;
-    }
-    n = pb_snapshot(pb, snap, n); /* отсортированный срез дерева */
-
     if (!reverse) {
-        for (size_t i = 0; i < n; i++)
-            print_contact(snap[i], i + 1);
+        number = 1;
+        for (const PbNode *n = pb_head(pb); n != NULL; n = n->next)
+            print_contact(&n->data, number++);
     } else {
-        for (size_t i = n; i-- > 0; )
-            print_contact(snap[i], i + 1);
+        number = pb_count(pb);
+        for (const PbNode *n = pb_tail(pb); n != NULL; n = n->prev)
+            print_contact(&n->data, number--);
     }
     printf("Всего контактов: %zu\n", pb_count(pb));
-    free(snap);
-}
-
-static void draw_node(const TreeNode *n, const char *prefix, int is_left)
-{
-    char next[512];
-
-    if (n->right != NULL) {
-        snprintf(next, sizeof(next), "%s%s",
-                 prefix, is_left ? "│   " : "    ");
-        draw_node(n->right, next, 0);
-    }
-
-    printf("%s%s%s %s\n", prefix,
-           is_left ? "└── " : "┌── ",
-           n->data.surname, n->data.name);
-
-    if (n->left != NULL) {
-        snprintf(next, sizeof(next), "%s%s",
-                 prefix, is_left ? "    " : "│   ");
-        draw_node(n->left, next, 1);
-    }
-}
-
-static void draw_tree(const TreeNode *root)
-{
-    if (root == NULL) {
-        printf("  (дерево пусто)\n");
-        return;
-    }
-    /* корень печатается без соединителя, его поддеревья — вокруг */
-    if (root->right != NULL)
-        draw_node(root->right, "", 0);
-    printf("%s %s\n", root->data.surname, root->data.name);
-    if (root->left != NULL)
-        draw_node(root->left, "", 1);
-}
-
-/* Минимально возможная высота дерева из n узлов — ceil(log2(n+1)) */
-static size_t ideal_height(size_t n)
-{
-    size_t h = 0;
-
-    while (n > 0) {
-        h++;
-        n /= 2;
-    }
-    return h;
-}
-
-static void action_stats(PhoneBook *pb)
-{
-    char buf[8];
-
-    printf("Контактов: %zu, высота дерева: %zu",
-           pb_count(pb), pb_height(pb));
-    if (pb_count(pb) > 0)
-        printf(" (идеальная: %zu)", ideal_height(pb_count(pb)));
-    printf("\n\nСтруктура дерева (корень слева; сверху вниз: я -> а):\n");
-    draw_tree(pb_root(pb));
-
-    printf("\nСбалансировать сейчас? (y/N): ");
-    read_line(buf, sizeof(buf));
-    if (buf[0] == 'y' || buf[0] == 'Y') {
-        pb_balance(pb);
-        printf("\nПосле балансировки (высота %zu):\n", pb_height(pb));
-        draw_tree(pb_root(pb));
-    }
 }
 
 static void action_add(PhoneBook *pb)
@@ -535,7 +465,6 @@ void ui_run(PhoneBook *pb)
                "4. Редактировать контакт\n"
                "5. Удалить контакт\n"
                "6. Поиск по ФИО\n"
-               "7. Состояние дерева / балансировка\n"
                "0. Выход\n"
                "Выберите пункт: ");
 
@@ -549,7 +478,6 @@ void ui_run(PhoneBook *pb)
         case '4': action_edit(pb);     break;
         case '5': action_remove(pb);   break;
         case '6': action_find(pb);     break;
-        case '7': action_stats(pb);    break;
         case '0': return;
         default:  printf("Неизвестный пункт меню.\n");
         }
